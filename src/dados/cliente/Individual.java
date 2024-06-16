@@ -1,4 +1,4 @@
-package dados;
+package dados.cliente;
 
 public class Individual extends Cliente {
 
