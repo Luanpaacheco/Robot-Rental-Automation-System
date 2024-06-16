@@ -6,4 +6,10 @@ public class Agricola extends Robo {
 
 	private String uso;
 
+	@Override
+	public double calculaLocacao(int dias) {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'calculaLocacao'");
+	}
+
 }
