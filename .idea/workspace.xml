@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="465361da-c427-48cc-b29a-63ed45c88a77" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/dados/Domestico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Domestico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/Industrial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Industrial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/Robo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Robo.java" afterDir="false" />
-    </list>
+    <list default="true" id="465361da-c427-48cc-b29a-63ed45c88a77" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718480553458</updated>
       <workItem from="1718480554926" duration="954000" />
-      <workItem from="1718573239964" duration="1147000" />
+      <workItem from="1718573239964" duration="1448000" />
     </task>
     <servers />
   </component>
