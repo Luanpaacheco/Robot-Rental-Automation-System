@@ -1,11 +1,11 @@
 package dados.robo;
 
-public class Agricola extends Robo {
+public class Agricola extends Robo{
 	private double area;
 	private String uso;
 
-	public Agricola(int id, String modelo, double valorDiario, double area, String uso) {
-		super(id, modelo, valorDiario);
+	public Agricola(int id, String modelo, double area, String uso) {
+		super(id, modelo);
 		this.area = area;
 		this.uso = uso;
 	}
@@ -24,5 +24,10 @@ public class Agricola extends Robo {
 
 	public void setUso(String uso) {
 		this.uso = uso;
+	}
+
+	@Override
+	public String toString() {
+		return "Informações do Robo Agricola!\n" + super.toString() + "Uso = " + this.uso + " | Area = " + this.area + " metros quadrados";
 	}
 }

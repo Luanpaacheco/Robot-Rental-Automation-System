@@ -1,10 +1,12 @@
 package dados.robo;
 
+import javax.swing.plaf.RootPaneUI;
+
 public class Industrial extends Robo {
 	private String setor;
 
-	public Industrial(int id, String modelo, double valorDiario, String setor) {
-		super(id, modelo, valorDiario);
+	public Industrial(int id, String modelo, String setor) {
+		super(id, modelo);
 		this.setor = setor;
 	}
 
@@ -14,5 +16,10 @@ public class Industrial extends Robo {
 
 	public void setSetor(String setor) {
 		this.setor = setor;
+	}
+
+	@Override
+	public String toString() {
+		return "Informações do Robo Industrial!\n" + super.toString() + "Setor = " + this.setor ;
 	}
 }

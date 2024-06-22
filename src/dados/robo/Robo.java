@@ -1,14 +1,13 @@
 package dados.robo;
 
-public  class Robo {
+public abstract class Robo {
 	private int id;
 	private String modelo;
-	private double valorDiario;
+	private double valorDiario = 0;
 
-	public Robo(int id, String modelo, double valorDiario) {
+	public Robo(int id, String modelo) {
 		this.id = id;
 		this.modelo = modelo;
-		this.valorDiario = valorDiario;
 	}
 
 	public int getId() {
@@ -37,10 +36,9 @@ public  class Robo {
 
 	@Override
 	public String toString() {
-		return "Robo{" +
-				"id=" + id +
-				", modelo='" + modelo + '\'' +
-				", valorDiario=" + valorDiario +
-				'}';
+		return
+				"Id = " + id +
+						" | Modelo = " + modelo +
+						" | ";
 	}
 }

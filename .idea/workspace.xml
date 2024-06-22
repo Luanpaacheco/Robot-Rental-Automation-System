@@ -4,7 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="465361da-c427-48cc-b29a-63ed45c88a77" name="Changes" comment="" />
+    <list default="true" id="465361da-c427-48cc-b29a-63ed45c88a77" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/2532682.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/2826508.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/3398682.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/a-robot-holding-a-phone-and-looking-at-it-ai-generative-free-png.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/robot-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/converteJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/Aplicacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaA.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaD.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaMenu.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaR.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/Locacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Locacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/robo/Agricola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Agricola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/robo/Domestico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Domestico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/robo/Industrial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Industrial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/robo/Robo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Robo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -32,12 +61,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Codigos/ACMERobots",
+    "last_opened_file_path": "C:/Codigos/ACMERobots/src/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,6 +76,44 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Codigos\ACMERobots\src\images" />
+      <recent name="C:\Codigos\ACMERobots\src\ui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Codigos\ACMERobots\src\images" />
+      <recent name="C:\Codigos\ACMERobots\src" />
+      <recent name="C:\Codigos\ACMERobots\src\aplicacao" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="meu-projeto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TrabalhoFinal" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TrabalhoFinal" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -64,6 +132,9 @@
       <updated>1718480553458</updated>
       <workItem from="1718480554926" duration="954000" />
       <workItem from="1718573239964" duration="1448000" />
+      <workItem from="1718575172686" duration="648000" />
+      <workItem from="1718616055242" duration="105000" />
+      <workItem from="1719018965560" duration="4694000" />
     </task>
     <servers />
   </component>
