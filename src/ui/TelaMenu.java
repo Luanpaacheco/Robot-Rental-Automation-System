@@ -31,7 +31,13 @@ public class TelaMenu {
         voltarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                app.mudaPainel(0);
+
+            }
+        });
+        cadastrarClienteButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                app.mudaPainel(5);
             }
         });
     }

@@ -5,25 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="465361da-c427-48cc-b29a-63ed45c88a77" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/aperto-de-mao (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/cliente.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/empresa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaEmpresarial.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaEmpresarial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaIndividual.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaIndividual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaMenuClientes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaMenuClientesClientes.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Teste.json" beforeDir="false" afterPath="$PROJECT_DIR$/Teste.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Agricola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Agricola.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Domestico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Domestico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Industrial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Industrial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Robo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Robo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/CarregarDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/CarregarJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Agricola.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dados/robo/Agricola.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Domestico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dados/robo/Domestico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Industrial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dados/robo/Industrial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/CarregarDados.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Aplicacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR.class" afterDir="false" />
     </list>
@@ -75,6 +73,7 @@
       <recent name="C:\Codigos\ACMERobots\src\ui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Codigos\ACMERobots\src\ui" />
       <recent name="C:\Codigos\ACMERobots\src\images" />
       <recent name="C:\Codigos\ACMERobots\src" />
       <recent name="C:\Codigos\ACMERobots\src\aplicacao" />
@@ -130,7 +129,7 @@
       <workItem from="1719018965560" duration="4694000" />
       <workItem from="1719048585642" duration="9690000" />
       <workItem from="1719106881250" duration="733000" />
-      <workItem from="1719134036977" duration="3581000" />
+      <workItem from="1719134036977" duration="8631000" />
     </task>
     <servers />
   </component>

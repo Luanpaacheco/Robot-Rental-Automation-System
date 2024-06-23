@@ -5,12 +5,15 @@ import aplicacao.ACMERobots;
 import javax.swing.*;
 
 public class Aplicacao extends JFrame {
-    ACMERobots robots = new ACMERobots();
-    private TelaMenu telaMenu = new TelaMenu(this,robots);
-    private TelaR tela = new TelaR(this,robots);
-    private TelaD telaD = new TelaD(this,robots);
-    private TelaA telaA = new TelaA(this,robots);
-    private TelaI telaI = new TelaI(this,robots);
+    ACMERobots acmeRobots = new ACMERobots();
+    private TelaMenuClientes telaMenuClientes = new TelaMenuClientes(this,acmeRobots);
+    private TelaIndividual telaIndividual = new TelaIndividual(this,acmeRobots);
+    private TelaEmpresarial telaEmpresarial= new TelaEmpresarial(this, acmeRobots);
+    private TelaMenu telaMenu = new TelaMenu(this, acmeRobots);
+    private TelaR tela = new TelaR(this, acmeRobots);
+    private TelaD telaD = new TelaD(this, acmeRobots);
+    private TelaA telaA = new TelaA(this, acmeRobots);
+    private TelaI telaI = new TelaI(this, acmeRobots);
 
     public Aplicacao(){
         super();
@@ -46,6 +49,22 @@ public class Aplicacao extends JFrame {
                 this.setContentPane(telaI.getPainel());
                 this.pack();
                 this.setSize(1000,800);
+                break;
+            case 5:
+                this.setContentPane(telaMenuClientes.getPainel());
+                this.pack();
+                this.setSize(850,600);
+                break;
+            case 6:
+                this.setContentPane(telaIndividual.getPainel());
+                this.pack();
+                this.setSize(600,400);
+                break;
+
+            case 7:
+                this.setContentPane(telaEmpresarial.getPainel());
+                this.pack();
+                this.setSize(600,400);
                 break;
         }
     }
