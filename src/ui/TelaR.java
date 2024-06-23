@@ -4,7 +4,7 @@ import aplicacao.ACMERobots;
 import dados.Locacao;
 import dados.robo.Robo;
 import service.CarregarDados;
-import service.converteJson;
+import service.ConverteJson;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -14,7 +14,7 @@ import java.util.List;
 
 public class TelaR {
     CarregarDados carregarDados;
-    private converteJson a;
+    private ConverteJson conversor;
     private Aplicacao aplicacao;
     Locacao locacao = new Locacao();
     private ACMERobots acmeRobots;
@@ -37,7 +37,7 @@ public class TelaR {
         acmeRobots = robots;
         aplicacao = app;
         listaRobos = acmeRobots.getListaRobos();
-        a =  new converteJson(acmeRobots);
+        conversor =  new ConverteJson(acmeRobots);
         carregarDados = new CarregarDados(listaRobos);
 
 
@@ -59,7 +59,8 @@ public class TelaR {
                         .sorted(Comparator.comparingInt(Robo::getId))
                         .forEach(a -> estadoArea.append(a.toString() + "\n"));
 
-                a.converte(listaRobos);
+                conversor.converte(listaRobos);
+
 
             }
         });
@@ -96,7 +97,7 @@ public class TelaR {
                 if(nomeArquivo.isEmpty()){
                     JOptionPane.showMessageDialog(aplicacao, "Para salvar digie o nome do arquivo!\nSem extenção");
                 }else{
-                    a.salvarDados(listaRobos, nomeArquivo);
+                    conversor.salvarDados(listaRobos, nomeArquivo);
                 }
             }
         });

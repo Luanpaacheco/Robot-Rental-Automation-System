@@ -8,6 +8,7 @@ public class Agricola extends Robo{
 		super(id, modelo);
 		this.area = area;
 		this.uso = uso;
+		determinaValorDiario();
 	}
 
 	public double getArea() {
@@ -28,12 +29,14 @@ public class Agricola extends Robo{
 
 	@Override
 	public double calculaLocacao(int dias) {
-		setValorDiario(10 * area);
 		return dias * getValorDiario();
 		}
 
 	@Override
 	public String toString() {
 		return "Informações do Robo Agricola!\n" + super.toString() + "Uso = " + this.uso + " | Area = " + this.area + " metros quadrados";
+	}
+	private void determinaValorDiario() {
+		setValorDiario(area*10);
 	}
 }

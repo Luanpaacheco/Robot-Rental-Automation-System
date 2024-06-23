@@ -8,6 +8,7 @@ public class Industrial extends Robo {
 	public Industrial(int id, String modelo, String setor) {
 		super(id, modelo);
 		this.setor = setor;
+		setValorDiario(90);
 
 	}
 
