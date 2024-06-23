@@ -23,7 +23,6 @@ public class Industrial extends Robo {
 
 	@Override
 	public double calculaLocacao(int dias) {
-		setValorDiario(90);
 		return getValorDiario() * dias;
 	}
 
