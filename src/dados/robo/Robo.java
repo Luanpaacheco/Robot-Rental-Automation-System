@@ -3,7 +3,7 @@ package dados.robo;
 public abstract class Robo {
 	private int id;
 	private String modelo;
-	private double valorDiario = 0;
+	private double valorDiario;
 
 	public Robo(int id, String modelo) {
 		this.id = id;
@@ -33,6 +33,7 @@ public abstract class Robo {
 	public void setValorDiario(double valorDiario) {
 		this.valorDiario = valorDiario;
 	}
+	public abstract double calculaLocacao(int dias);
 
 	@Override
 	public String toString() {

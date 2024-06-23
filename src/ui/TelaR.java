@@ -13,6 +13,7 @@ import java.util.List;
 
 public class TelaR {
     private converteJson a;
+    private Aplicacao aplicacao;
     Locacao locacao = new Locacao();
     private ACMERobots acmeRobots;
     private List<Robo> listaRobos;
@@ -25,9 +26,12 @@ public class TelaR {
     private JButton domesticoButton;
     private JButton agricolaButton;
     private JButton industrialButton;
+    private JButton salvarRobosButton;
+    private JTextField arquivoNomeField;
 
     public TelaR(Aplicacao app, ACMERobots robots) {
         acmeRobots = robots;
+        aplicacao = app;
         listaRobos = acmeRobots.getListaRobos();
         a =  new converteJson(acmeRobots);
 
@@ -78,6 +82,17 @@ public class TelaR {
             @Override
             public void actionPerformed(ActionEvent e) {
                 app.mudaPainel(3);
+            }
+        });
+        salvarRobosButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String nomeArquivo = arquivoNomeField.getText();
+                if(nomeArquivo.isEmpty()){
+                    JOptionPane.showMessageDialog(aplicacao, "Para salvar digie o nome do arquivo!\nSem extenção");
+                }else{
+                    a.salvarDados(listaRobos, nomeArquivo);
+                }
             }
         });
     }

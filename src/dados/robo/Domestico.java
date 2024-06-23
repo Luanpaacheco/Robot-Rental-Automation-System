@@ -17,6 +17,18 @@ public class Domestico extends Robo{
 	}
 
 	@Override
+	public double calculaLocacao(int dias) {
+		if(nivel == 1){
+			setValorDiario(10);
+		}else if(nivel == 2){
+			setValorDiario(20);
+		}else {
+			setValorDiario(50);
+		}
+		return getValorDiario() * dias;
+	}
+
+	@Override
 	public String toString() {
 		return "Informações do Robo Doméstico!\n" + super.toString() + "Nível = " + this.nivel;
 	}
