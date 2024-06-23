@@ -3,6 +3,7 @@ package ui;
 import aplicacao.ACMERobots;
 import dados.Locacao;
 import dados.robo.Robo;
+import service.CarregarDados;
 import service.converteJson;
 
 import javax.swing.*;
@@ -12,6 +13,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class TelaR {
+    CarregarDados carregarDados;
     private converteJson a;
     private Aplicacao aplicacao;
     Locacao locacao = new Locacao();
@@ -28,12 +30,15 @@ public class TelaR {
     private JButton industrialButton;
     private JButton salvarRobosButton;
     private JTextField arquivoNomeField;
+    private JButton carregarDadosButton;
+    private JTextField carregarField;
 
     public TelaR(Aplicacao app, ACMERobots robots) {
         acmeRobots = robots;
         aplicacao = app;
         listaRobos = acmeRobots.getListaRobos();
         a =  new converteJson(acmeRobots);
+        carregarDados = new CarregarDados(listaRobos);
 
 
         limparButton.addActionListener(new ActionListener() {
@@ -93,6 +98,13 @@ public class TelaR {
                 }else{
                     a.salvarDados(listaRobos, nomeArquivo);
                 }
+            }
+        });
+        carregarDadosButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String arquivo = carregarField.getText();
+                carregarDados.carregarDadosDoArquivoRobo(arquivo);
             }
         });
     }

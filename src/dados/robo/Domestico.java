@@ -8,6 +8,7 @@ public class Domestico extends Robo{
 		this.nivel = nivel;
 	}
 
+
 	public int getNivel() {
 		return nivel;
 	}

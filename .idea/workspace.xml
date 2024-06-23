@@ -5,15 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="465361da-c427-48cc-b29a-63ed45c88a77" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/service/CarregarDados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/GsonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Agricola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Agricola.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dados/robo/Domestico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Domestico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dados/robo/Industrial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Industrial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dados/robo/Robo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Robo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/converteJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/converteJson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/TelaR.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaR.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/TelaR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Domestico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dados/robo/Domestico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Industrial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dados/robo/Industrial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Robo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dados/robo/Robo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +126,7 @@
       <workItem from="1718575172686" duration="648000" />
       <workItem from="1718616055242" duration="105000" />
       <workItem from="1719018965560" duration="4694000" />
-      <workItem from="1719048585642" duration="5879000" />
+      <workItem from="1719048585642" duration="8079000" />
     </task>
     <servers />
   </component>

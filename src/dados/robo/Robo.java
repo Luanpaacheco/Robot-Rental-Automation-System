@@ -10,6 +10,7 @@ public abstract class Robo {
 		this.modelo = modelo;
 	}
 
+
 	public int getId() {
 		return id;
 	}

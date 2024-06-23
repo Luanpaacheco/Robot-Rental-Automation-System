@@ -11,6 +11,7 @@ public class Industrial extends Robo {
 
 	}
 
+
 	public String getSetor() {
 		return setor;
 	}
