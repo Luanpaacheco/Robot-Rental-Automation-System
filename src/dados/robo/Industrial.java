@@ -1,7 +1,8 @@
 package dados.robo;
 
-import javax.swing.plaf.RootPaneUI;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
+@JsonTypeName("industrial")
 public class Industrial extends Robo {
 	private String setor;
 

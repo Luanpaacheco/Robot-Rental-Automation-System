@@ -1,5 +1,10 @@
 package dados.robo;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
+import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
+
+@JsonTypeInfo(use = Id.NAME, include = As.PROPERTY, property = "tipo")
 public abstract class Robo {
 	private int id;
 	private String modelo;
@@ -9,6 +14,7 @@ public abstract class Robo {
 		this.id = id;
 		this.modelo = modelo;
 	}
+	public Robo() {}
 
 
 	public int getId() {

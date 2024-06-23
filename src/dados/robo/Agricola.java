@@ -1,5 +1,9 @@
 package dados.robo;
 
+import com.fasterxml.jackson.annotation.JsonTypeName;
+
+
+@JsonTypeName("agricola")
 public class Agricola extends Robo{
 	private double area;
 	private String uso;
@@ -9,6 +13,9 @@ public class Agricola extends Robo{
 		this.area = area;
 		this.uso = uso;
 		determinaValorDiario();
+	}
+	public Agricola() {
+
 	}
 
 	public double getArea() {

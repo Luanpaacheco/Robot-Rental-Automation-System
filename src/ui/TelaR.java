@@ -3,17 +3,19 @@ package ui;
 import aplicacao.ACMERobots;
 import dados.Locacao;
 import dados.robo.Robo;
-import service.CarregarDados;
 import service.ConverteJson;
+import service.CarregarJson;
+
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 
 public class TelaR {
-    CarregarDados carregarDados;
+    private CarregarJson carregarJson;
     private ConverteJson conversor;
     private Aplicacao aplicacao;
     Locacao locacao = new Locacao();
@@ -38,7 +40,7 @@ public class TelaR {
         aplicacao = app;
         listaRobos = acmeRobots.getListaRobos();
         conversor =  new ConverteJson(acmeRobots);
-        carregarDados = new CarregarDados(listaRobos);
+        carregarJson = new CarregarJson();
 
 
         limparButton.addActionListener(new ActionListener() {
@@ -105,7 +107,8 @@ public class TelaR {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String arquivo = carregarField.getText();
-                carregarDados.carregarDadosDoArquivoRobo(arquivo);
+                //Aqui colocamos uma collection genérica para receber a lista de robos que é retornada do metodo carregarDados
+                listaRobos.addAll((Collection<? extends Robo>) carregarJson.carregarDados(arquivo));
             }
         });
     }

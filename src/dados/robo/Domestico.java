@@ -1,5 +1,9 @@
 package dados.robo;
 
+import com.fasterxml.jackson.annotation.JsonTypeName;
+
+
+@JsonTypeName("domestico")
 public class Domestico extends Robo{
 	private int nivel;
 
