@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="465361da-c427-48cc-b29a-63ed45c88a77" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/images/aperto-de-mao (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/cliente.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/empresa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaEmpresarial.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaEmpresarial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaIndividual.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaIndividual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaMenuClientes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaMenuClientesClientes.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Aplicacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaR.class" afterDir="false" />
+>>>>>>> f1b3e16555688ed1edb7abd3b3af2fcd08e5693d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +37,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -33,11 +56,19 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+<<<<<<< HEAD
+=======
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+>>>>>>> f1b3e16555688ed1edb7abd3b3af2fcd08e5693d
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+<<<<<<< HEAD
+=======
+    &quot;last_opened_file_path&quot;: &quot;C:/Codigos/ACMERobots/src/images&quot;,
+>>>>>>> f1b3e16555688ed1edb7abd3b3af2fcd08e5693d
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -46,10 +77,53 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+<<<<<<< HEAD
+=======
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Codigos\ACMERobots\src\images" />
+      <recent name="C:\Codigos\ACMERobots\src\ui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Codigos\ACMERobots\src\ui" />
+      <recent name="C:\Codigos\ACMERobots\src\images" />
+      <recent name="C:\Codigos\ACMERobots\src" />
+      <recent name="C:\Codigos\ACMERobots\src\aplicacao" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="meu-projeto" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TrabalhoFinal" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TrabalhoFinal" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+>>>>>>> f1b3e16555688ed1edb7abd3b3af2fcd08e5693d
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
       </set>
     </attachedChunks>
   </component>
@@ -62,8 +136,18 @@
       <option name="presentableId" value="Default" />
       <updated>1718480553458</updated>
       <workItem from="1718480554926" duration="954000" />
+<<<<<<< HEAD
       <workItem from="1718500589736" duration="18000" />
       <workItem from="1718500649867" duration="18000" />
+=======
+      <workItem from="1718573239964" duration="1448000" />
+      <workItem from="1718575172686" duration="648000" />
+      <workItem from="1718616055242" duration="105000" />
+      <workItem from="1719018965560" duration="4694000" />
+      <workItem from="1719048585642" duration="9690000" />
+      <workItem from="1719106881250" duration="733000" />
+      <workItem from="1719134036977" duration="8631000" />
+>>>>>>> f1b3e16555688ed1edb7abd3b3af2fcd08e5693d
     </task>
     <servers />
   </component>
