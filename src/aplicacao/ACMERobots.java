@@ -55,10 +55,10 @@ public class ACMERobots {
 
 
     public List<Robo> getListaRobos() {
-        return listaRobos;
+        return listaRobos.stream().toList();
     }
     public List<Cliente> getListaCliente() {
-        return clientes;
+        return clientes.stream().toList();
     }
 
 }
