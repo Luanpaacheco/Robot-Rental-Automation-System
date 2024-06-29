@@ -19,6 +19,7 @@ public class TelaEmpresarial {
     private JButton cadastra;
 
     private JLabel ano;
+    private JTextField labelNome;
 
     public TelaEmpresarial(Aplicacao aplicacao, ACMERobots client){
         this.aplicacao=aplicacao;

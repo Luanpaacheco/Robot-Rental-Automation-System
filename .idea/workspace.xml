@@ -5,65 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/Locacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Locacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaEmpresarial.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaIndividual.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaIndividual.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaIndividual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaIndividual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/Locacao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/converteJson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/Aplicacao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaA$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaA$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaA$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaA$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaD$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaD$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaD$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaD$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaEmpresarial$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaEmpresarial$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaEmpresarial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaI$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaI$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaI$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaI$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaIndividual$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaIndividual$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaIndividual.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.java" afterDir="false" />
     </list>
-    <list id="05298dd8-12db-4b68-899e-2e68ea8945e4" name="Changes by 21lui" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ui/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Aplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaA.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaA.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaD.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaD.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaEmpresarial.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenuClientesClientes.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientesClientes.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaR.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaR.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaR.java" afterDir="false" />
+    <list id="05298dd8-12db-4b68-899e-2e68ea8945e4" name="Changes by 21lui" comment="" />
+    <list id="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" name="Changes by arthu" comment="">
+      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientes.java" afterDir="false" />
     </list>
-    <list id="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" name="Changes by arthu" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/luanp/Documents/PUCRS/POO/TrabalhoFinal/src/ui/cliente",
     "node.js.detected.package.eslint": "true",
@@ -182,7 +131,7 @@
       <workItem from="1719106881250" duration="733000" />
       <workItem from="1719134036977" duration="8631000" />
       <workItem from="1719267073393" duration="19000" />
-      <workItem from="1719698569298" duration="2574000" />
+      <workItem from="1719698569298" duration="2949000" />
     </task>
     <servers />
   </component>

@@ -43,11 +43,11 @@ public class TelaMenuClientes {
         MOSTRAR.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(acmeRobots.getListaCliente().isEmpty()){
+                if(acmeRobots.getListaClientes().isEmpty()){
                     JOptionPane.showMessageDialog(aplicacao,"cadastre pelo menos um cliente!");
                 }else {
                     textArea1.setText("");
-                    acmeRobots.getListaCliente().stream().sorted(Comparator.comparingInt(Cliente::getCodigo)).forEach(a-> textArea1.append(a.toString()+"\n"));
+                    acmeRobots.getListaClientes().stream().sorted(Comparator.comparingInt(Cliente::getCodigo)).forEach(a-> textArea1.append(a.toString()+"\n"));
                 }
 
             }
