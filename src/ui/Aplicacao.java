@@ -1,6 +1,13 @@
 package ui;
 
 import aplicacao.ACMERobots;
+import ui.cliente.TelaIndividual;
+import ui.cliente.TelaEmpresarial;
+import ui.cliente.TelaMenuClientes;
+import ui.robo.TelaA;
+import ui.robo.TelaD;
+import ui.robo.TelaI;
+import ui.robo.TelaR;
 
 import javax.swing.*;
 
