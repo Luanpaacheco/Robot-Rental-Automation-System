@@ -78,7 +78,7 @@ public class TelaCriarLocacao extends JDialog {
                         dataInicioField.setText("");
                         dataFimField.setText("");
                         clienteField.setText("");
-                        aplicacao.mudaPainel(2);
+                        aplicacao.mudaPainel(9);
                     } else {
                         JOptionPane.showMessageDialog(aplicacao, "Essa locacao já foi cadastrada.");
                         numeroField.setText("");

@@ -63,7 +63,7 @@ public class TelaAddRobos extends JDialog {
         concluirButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                aplicacao.mudaPainel(3);
+                aplicacao.mudaPainel(10);
             }
         });
 

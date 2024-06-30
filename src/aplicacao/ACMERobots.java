@@ -2,6 +2,8 @@ package aplicacao;
 
 import dados.Status;
 import dados.cliente.Cliente;
+import dados.robo.Agricola;
+import dados.robo.Domestico;
 import dados.robo.Robo;
 import dados.Locacao;
 import org.springframework.scheduling.config.TaskNamespaceHandler;
@@ -23,6 +25,34 @@ public class ACMERobots {
         this.clientes = new ArrayList<>();
         this.listaLocacoes = listaLocacoes;
     }
+
+    public void criarRobosEClientes() {
+        Agricola robo1 = new Agricola(209534, "super", 2.7, "fertilizante");
+        Industrial robo2 = new Industrial(506257, "prime", "automotivo");
+        Domestico robo3 = new Domestico(764905, "special", 2);
+        Agricola robo4 = new Agricola(254375, "epic", 3.8, "colheita");
+        Industrial robo5 = new Industrial(538952, "senior", "textil");
+        Domestico robo6 = new Domestico(738581, "house", 1);
+        Individual cliente1 = new Individual(23200003, "Arthur", "67485408095");
+        Empresarial cliente2 = new Empresarial(23104235, "Luan", 2012);
+        Empresarial cliente3 = new Empresarial(23280307, "Luis", 2017);
+        Individual cliente4 = new Individual(27653092, "Pedro", "72097426486");
+        Individual cliente5 = new Individual(20905235, "Leonardo", "74735867285");
+        Empresarial cliente6 = new Empresarial(27658629, "Olivia", 2001);
+        listaRobos.add(robo1);
+        listaRobos.add(robo2);
+        listaRobos.add(robo3);
+        listaRobos.add(robo4);
+        listaRobos.add(robo5);
+        listaRobos.add(robo6);
+        clientes.add(cliente1);
+        clientes.add(cliente2);
+        clientes.add(cliente3);
+        clientes.add(cliente4);
+        clientes.add(cliente5);
+        clientes.add(cliente6);
+    }
+
 
     public boolean adicionarRobo(Robo novoRobo) {
         if (consultaIdRobo(novoRobo.getId()) != null) {
