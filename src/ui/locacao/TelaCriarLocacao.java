@@ -65,12 +65,12 @@ public class TelaCriarLocacao extends JDialog {
 
                     Date dataInicio = acmeRobots.dataConvertida(dataInicioString);
                     Status situacao = Status.valueOf(situacaoString);
-                    Cliente cliente = acmeRobots.consultaCodigo(codigoCliente);
+                    Cliente cliente = acmeRobots.consultaCodigoCliente(codigoCliente);
 
                     if(cliente == null) {
                         JOptionPane.showMessageDialog(aplicacao, "Essa cliente nao esta cadastrado.");
                     } else {
-                    Locacao novaLocacao = new Locacao(numero, situacao, dataInicio, dataFim, cliente);
+                    Locacao novaLocacao = new Locacao(numero, Status.CADASTRADA, dataInicio, dataFim, cliente);
 
                     if(acmeRobots.adicionarLocacao(novaLocacao)) {
                         numeroField.setText("");

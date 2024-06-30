@@ -1,5 +1,7 @@
 package dados.cliente;
 
+import aplicacao.ACMERobots;
+
 public abstract class Cliente {
 	private int codigo;
 	private String nome;
@@ -17,6 +19,7 @@ public abstract class Cliente {
 		return nome;
 	}
 
+	public abstract double calculaDesconto();
 	@Override
 	public String toString() {
 		return "Cliente [" +

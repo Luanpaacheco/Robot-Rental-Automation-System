@@ -41,11 +41,26 @@ public class Locacao {
 	public List<Robo> getListaRobos() {
 		return listaDeRobos;
 	}
+	public Status getSituacao() {
+		return situacao;
+	}
 
+	public int getDataFim() {
+		return dataFim;
+	}
+
+/*
 	public Date dataNoFim() {
 		Date dataFinal = dataInicio;
 		return dataFinal;
 	}
+
+ */
+
+	public void setSituacao(Status situacao) {
+		this.situacao = situacao;
+	}
+
 	@Override
 	public String toString() {
 		return "\n" + "Locacao numero: " + numero + ";" +

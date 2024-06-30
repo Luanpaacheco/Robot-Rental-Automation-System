@@ -1,8 +1,11 @@
 package aplicacao;
 
+import dados.Status;
 import dados.cliente.Cliente;
 import dados.robo.Robo;
 import dados.Locacao;
+import org.springframework.scheduling.config.TaskNamespaceHandler;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Date;
@@ -22,7 +25,7 @@ public class ACMERobots {
     }
 
     public boolean adicionarRobo(Robo novoRobo) {
-        if (consultaId(novoRobo.getId()) != null) {
+        if (consultaIdRobo(novoRobo.getId()) != null) {
             return false;
         }
         return listaRobos.add(novoRobo);
@@ -59,7 +62,7 @@ public class ACMERobots {
         }
     }
 
-    public Robo consultaId(int id) {
+    public Robo consultaIdRobo(int id) {
         Robo robo = listaRobos.stream()
                 .filter(m -> m.getId() == id)
                 .findFirst()
@@ -71,14 +74,14 @@ public class ACMERobots {
         }
     }
     public boolean cadastraCliente(Cliente cliente) {
-        if(consultaCodigo(cliente.getCodigo())==null){
+        if(consultaCodigoCliente(cliente.getCodigo())==null){
             clientes.add(cliente);
             return true;
         }
         else
             return false;
     }
-    public Cliente consultaCodigo(int codigo) {
+    public Cliente consultaCodigoCliente(int codigo) {
 
         for (Cliente c : clientes){
             if(c.getCodigo()==codigo){
@@ -111,5 +114,54 @@ public class ACMERobots {
     public ArrayList<Locacao> getListaLocacoes() {
         return listaLocacoes;
     }
+
+    /*
+
+    public consultaLocacao(){
+
+    }
+
+    */
+
+    /*
+
+    public void numeroRobosNaLocacao(int numero) {
+        listaLocacoes.get(numero).getListaRobos().size();
+    }
+
+    */
+
+    public double calculoValorFinal(int numero){
+        double valorFinal;
+        double porcentagemDesconto;
+        double valorLocacaoRobos = 0;
+        double desconto;
+        int dias;
+        Locacao locacao = null;
+        for(Locacao loc : getListaLocacoes()) {
+            if(loc.getNumero() == numero) {
+                locacao = loc;
+            }
+        }
+        dias = locacao.getDataFim();
+        porcentagemDesconto = locacao.getCliente().calculaDesconto();
+        for(Robo robo : locacao.getListaRobos()) {
+            valorLocacaoRobos += robo.calculaLocacao(dias);
+        }
+        desconto = valorLocacaoRobos * porcentagemDesconto;
+        valorFinal = valorLocacaoRobos - desconto;
+        return valorFinal;
+    }
+
+    public void mostrarRelatorioGeral() {
+        for(Locacao locacao : listaLocacoes) {
+            if(locacao.getSituacao() == Status.CADASTRADA) {
+
+
+                locacao.setSituacao(Status.EXECUTANDO);
+            }
+        }
+    }
+
 
 }

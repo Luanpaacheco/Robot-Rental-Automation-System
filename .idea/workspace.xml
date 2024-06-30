@@ -4,9 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="" />
-    <list id="05298dd8-12db-4b68-899e-2e68ea8945e4" name="Changes by 21lui" comment="" />
-    <list id="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" name="Changes by arthu" comment="" />
+    <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/Locacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dados/Locacao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/Aplicacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/Aplicacao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao$3.class" afterDir="false" />
+    </list>
+    <list id="05298dd8-12db-4b68-899e-2e68ea8945e4" name="Changes by 21lui" comment="">
+      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Aplicacao.java" afterDir="false" />
+    </list>
+    <list id="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" name="Changes by arthu" comment="">
+      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/Locacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Locacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Aplicacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +42,37 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/ui/Aplicacao.java">
+      <ranges>
+        <range start1="6" end1="6" start2="6" end2="9" changelist="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" />
+        <range start1="23" end1="23" start2="26" end2="29" changelist="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" />
+        <range start1="62" end1="63" start2="68" end2="69" changelist="05298dd8-12db-4b68-899e-2e68ea8945e4" />
+        <range start1="67" end1="68" start2="73" end2="74" changelist="05298dd8-12db-4b68-899e-2e68ea8945e4" />
+        <range start1="69" end1="70" start2="75" end2="75" changelist="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" />
+        <range start1="73" end1="74" start2="78" end2="79" changelist="05298dd8-12db-4b68-899e-2e68ea8945e4" />
+        <range start1="75" end1="75" start2="80" end2="95" changelist="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/dados/cliente/Empresarial.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="5" changelist="05298dd8-12db-4b68-899e-2e68ea8945e4" />
+        <range start1="4" end1="4" start2="7" end2="8" changelist="05298dd8-12db-4b68-899e-2e68ea8945e4" />
+        <range start1="14" end1="14" start2="18" end2="42" changelist="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/aplicacao/ACMERobots.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="3" changelist="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" />
+        <range start1="5" end1="5" start2="6" end2="8" changelist="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" />
+        <range start1="24" end1="25" start2="27" end2="28" changelist="3902ef8c-4f71-4ecc-8d3e-e0b5cbe431c8" />
+        <range start1="61" end1="62" start2="64" end2="65" changelist="05298dd8-12db-4b68-899e-2e68ea8945e4" />
+        <range start1="73" end1="74" start2="76" end2="77" changelist="05298dd8-12db-4b68-899e-2e68ea8945e4" />
+        <range start1="80" end1="81" start2="83" end2="84" changelist="05298dd8-12db-4b68-899e-2e68ea8945e4" />
+        <range start1="114" end1="114" start2="117" end2="166" changelist="05298dd8-12db-4b68-899e-2e68ea8945e4" />
+      </ranges>
+    </file>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />

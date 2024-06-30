@@ -35,7 +35,7 @@ public class TelaAddRobos extends JDialog {
                 try {
                     int idRobo = Integer.valueOf(robosField.getText());
 
-                    Robo robo = acmeRobots.consultaId(idRobo);
+                    Robo robo = acmeRobots.consultaIdRobo(idRobo);
                     int numero = acmeRobots.getListaLocacoes().size() -1;
                     String cliente = acmeRobots.getListaLocacoes().get(numero).getCliente().getNome();
 

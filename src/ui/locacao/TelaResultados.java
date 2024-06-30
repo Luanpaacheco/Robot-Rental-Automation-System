@@ -22,7 +22,7 @@ public class TelaResultados extends JDialog {
         this.aplicacao = aplicacao;
         //int numero = acmeRobots.getListaLocacoes().size() -1;
 
-        atualizarResultado();
+        //atualizarResultado();
         //textAreaResultado.setText(acmeRobots.getListaLocacoes().get(numero).toString());
         //JOptionPane.showMessageDialog(aplicacao, acmeRobots.getListaLocacoes().get(numero).toString());
 
@@ -48,15 +48,15 @@ public class TelaResultados extends JDialog {
         });
         }
 
-    public void atualizarResultado() {
-        int numeroL = acmeRobots.getListaLocacoes().size() - 1;
-        int numeroR = acmeRobots.getListaLocacoes().get(numeroL).getListaRobos().size();
-        if (numeroL >= 0 && numeroR > 0) {
-            textAreaResultado.setText(acmeRobots.getListaLocacoes().get(numeroL).toString());
-        } else {
-            textAreaResultado.setText("Nenhuma locação disponível.");
-        }
-    }
+//    public void atualizarResultado() {
+//        int numeroL = acmeRobots.getListaLocacoes().size() - 1;
+//        int numeroR = acmeRobots.getListaLocacoes().get(numeroL).getListaRobos().size();
+//        if (numeroL >= 0 && numeroR > 0) {
+//            textAreaResultado.setText(acmeRobots.getListaLocacoes().get(numeroL).toString());
+//        } else {
+//            textAreaResultado.setText("Nenhuma locação disponível.");
+//        }
+//    }
 
     public JPanel getPainel() {
         return painel;
