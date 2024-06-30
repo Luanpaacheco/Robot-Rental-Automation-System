@@ -24,9 +24,8 @@ public class Aplicacao extends JFrame {
     private TelaD telaD = new TelaD(this, acmeRobots);
     private TelaA telaA = new TelaA(this, acmeRobots);
     private TelaI telaI = new TelaI(this, acmeRobots);
-    private TelaAddRobos telaAddRobos = new TelaAddRobos(this, acmeRobots);
+    //private TelaAddRobos telaAddRobos = new TelaAddRobos(this, acmeRobots);
     private TelaCriarLocacao telaCriarLocacao = new TelaCriarLocacao(this, acmeRobots);
-    private TelaResultados telaResultados = new TelaResultados(this, acmeRobots);
 
     public Aplicacao(){
         super();
@@ -84,11 +83,13 @@ public class Aplicacao extends JFrame {
                 this.setSize(1000,800);
                 break;
             case 9:
+                TelaAddRobos telaAddRobos = new TelaAddRobos(this, acmeRobots);
                 this.setContentPane(telaAddRobos.getPainel());
                 this.pack();
                 this.setSize(1000,800);
                 break;
             case 10:
+                TelaResultados telaResultados = new TelaResultados(this, acmeRobots);
                 this.setContentPane(telaResultados.getPainel());
                 this.pack();
                 this.setSize(1000,800);

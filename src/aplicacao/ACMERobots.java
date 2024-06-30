@@ -4,6 +4,9 @@ import dados.Status;
 import dados.cliente.Cliente;
 import dados.robo.Agricola;
 import dados.robo.Domestico;
+import dados.robo.Industrial;
+import dados.cliente.Empresarial;
+import dados.cliente.Individual;
 import dados.robo.Robo;
 import dados.Locacao;
 import org.springframework.scheduling.config.TaskNamespaceHandler;
@@ -15,15 +18,17 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 public class ACMERobots {
+    private static ACMERobots instance; // Instância única da classe ACMERobots
+
     private List<Robo> listaRobos = new ArrayList<>();
     private List<Cliente>clientes;
-    private ArrayList<Locacao> listaLocacoes = new ArrayList<>();
+    private ArrayList<Locacao> listaLocacoes ;
 
 
     public ACMERobots() {
         this.listaRobos = listaRobos;
         this.clientes = new ArrayList<>();
-        this.listaLocacoes = listaLocacoes;
+        this.listaLocacoes = new ArrayList<>();
     }
 
     public void criarRobosEClientes() {
@@ -60,6 +65,13 @@ public class ACMERobots {
         }
         return listaRobos.add(novoRobo);
     }
+    public static ACMERobots getInstance() {
+        if (instance == null) {
+            instance = new ACMERobots();
+        }
+        return instance;
+    }
+
 
     public boolean adicionarLocacao(Locacao novaLocacao) {
         for(Locacao l : listaLocacoes) {
@@ -141,9 +153,11 @@ public class ACMERobots {
     public List<Cliente> getListaClientes() {
         return clientes;
     }
+
     public ArrayList<Locacao> getListaLocacoes() {
         return listaLocacoes;
     }
+
 
     /*
 
@@ -183,7 +197,7 @@ public class ACMERobots {
         return valorFinal;
     }
 
-    public void mostrarRelatorioGeral() {
+    public void processarLocacoes() {
         for(Locacao locacao : listaLocacoes) {
             if(locacao.getSituacao() == Status.CADASTRADA) {
 

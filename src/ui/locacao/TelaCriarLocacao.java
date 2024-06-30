@@ -32,6 +32,7 @@ public class TelaCriarLocacao extends JDialog {
         this.acmeRobots = acmeRobots;
         this.aplicacao = aplicacao;
 
+        acmeRobots.criarRobosEClientes();
 
         textAreaClientes.setText(acmeRobots.getListaClientes().toString());
 

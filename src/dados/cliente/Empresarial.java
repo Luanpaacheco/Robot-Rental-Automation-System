@@ -4,31 +4,32 @@ import aplicacao.ACMERobots;
 import dados.Locacao;
 
 public class Empresarial extends Cliente {
-	private int ano;
-	ACMERobots acmeRobots;
+	ACMERobots acmeRobots = ACMERobots.getInstance();
 
-	public Empresarial(int codigo, String nome, int ano){
-		super(codigo,nome);
-		this.ano=ano;
+	private int ano;
+
+	public Empresarial(int codigo, String nome, int ano) {
+		super(codigo, nome);
+		this.ano = ano;
 	}
 
 	public int getAno() {
 		return ano;
 	}
-
 	public int numeroRobosNoCliente() {
 		int numeroRobos = 0;
 		for(Locacao locacao : acmeRobots.getListaLocacoes()) {
-			if(locacao.getCliente().getNome().equals(getNome())) {
+			if(locacao.getCliente().getCodigo() == getCodigo()) {
 				numeroRobos = locacao.getListaRobos().size();
 			}
 		}
 		return numeroRobos;
 	}
+	@Override
 	public double calculaDesconto() {
 		double valor = 0;
 		int numeroRobos = numeroRobosNoCliente();
-		if(numeroRobos >= 2 && numeroRobos <=9) {
+		if(numeroRobos >=2 && numeroRobos<=9) {
 			valor = 0.03;
 		}
 		if(numeroRobos >= 10) {
@@ -36,13 +37,10 @@ public class Empresarial extends Cliente {
 		}
 		return valor;
 	}
-	private void quantidadeRobosLocacao(){
-
-	}
 
 	@Override
 	public String toString() {
-		return super.toString()+
+		return super.toString() +
 				", ano= " + ano +
 				" ]";
 	}
