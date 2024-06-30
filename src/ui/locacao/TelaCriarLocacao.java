@@ -73,7 +73,7 @@ public class TelaCriarLocacao extends JDialog {
                     } else {
                     Locacao novaLocacao = new Locacao(numero, Status.CADASTRADA, dataInicio, dataFim, cliente);
 
-                    if(acmeRobots.adicionarLocacao(novaLocacao)) {
+                    if(acmeRobots.adicionarLocacao(novaLocacao) && acmeRobots.adicionarReserva(novaLocacao)) {
                         numeroField.setText("");
                         situacaoField.setText("");
                         dataInicioField.setText("");

@@ -26,13 +26,15 @@ public class ACMERobots {
 
     private List<Robo> listaRobos = new ArrayList<>();
     private List<Cliente>clientes;
-    private ArrayList<Locacao> listaLocacoes ;
+    private ArrayList<Locacao> listaLocacoes;
+    private ArrayList<Locacao> reservas;
 
 
     public ACMERobots() {
         this.listaRobos = listaRobos;
         this.clientes = new ArrayList<>();
         this.listaLocacoes = new ArrayList<>();
+        this.reservas = new ArrayList<>();
     }
 
     public void criarRobosEClientes() {
@@ -86,14 +88,24 @@ public class ACMERobots {
         return listaLocacoes.add(novaLocacao);
     }
 
-    public boolean adicionarRoboNaLocacao(int numero, Robo novoRobo) {
-        Locacao l = listaLocacoes.get(numero);
-        for(Robo robo : l.getListaRobos()) {
+    public boolean adicionarReserva(Locacao novaLocacao) {
+        for(Locacao l : listaLocacoes) {
+            if(novaLocacao.getNumero() == l.getNumero()) {
+                return false;
+            }
+        }
+        return reservas.add(novaLocacao);
+    }
+
+    public boolean adicionarRoboNaReserva(int numero, Robo novoRobo) {
+        //Locacao l = listaLocacoes.get(numero);
+        Locacao r = reservas.get(numero);
+        for(Robo robo : r.getListaRobos()) {
             if(robo == novoRobo) {
                 return false;
             }
         }
-        l.adicionaRobos(novoRobo);
+        r.adicionaRobos(novoRobo);
         return true;
         //return false;
     }
@@ -202,10 +214,18 @@ public class ACMERobots {
     }
 
     public void processarLocacoes() {
+        int x = 0;
         for(Locacao locacao : listaLocacoes) {
             if(locacao.getSituacao() == Status.CADASTRADA) {
-
-
+                x = locacao.getNumero();
+                //for(Locacao locReserva : reservas) {
+                    for(Robo robo : reservas.get(x).getListaRobos()) {
+                        if(robo ja foi) {
+                            break;
+                        }
+                    locacao.adicionaRobos(robo);
+                    }
+                //}
                 locacao.setSituacao(Status.EXECUTANDO);
             }
         }

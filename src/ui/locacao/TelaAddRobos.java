@@ -44,7 +44,7 @@ public class TelaAddRobos extends JDialog {
                         robosField.setText("");
                     } else {
 
-                    if(acmeRobots.adicionarRoboNaLocacao(numero, robo)) {
+                    if(acmeRobots.adicionarRoboNaReserva(numero, robo)) {
                         JOptionPane.showMessageDialog(aplicacao, "Robo adicionado na locacao de " + cliente);
                         textAreaResult.setText(acmeRobots.getListaLocacoes().get(numero).getListaRobos().toString());
                         robosField.setText("");
