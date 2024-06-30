@@ -13,7 +13,7 @@ import java.awt.event.*;
 import java.util.Date;
 
 public class TelaCriarLocacao extends JDialog {
-    ACMERobots acmeRobots;
+    private ACMERobots acmeRobots = ACMERobots.getInstance();
     Aplicacao aplicacao;
     private JPanel contentPane;
     private JPanel painel;
@@ -28,8 +28,7 @@ public class TelaCriarLocacao extends JDialog {
     private JButton limparButton;
 
 
-    public TelaCriarLocacao(Aplicacao aplicacao, ACMERobots acmeRobots) {
-        this.acmeRobots = acmeRobots;
+    public TelaCriarLocacao(Aplicacao aplicacao) {
         this.aplicacao = aplicacao;
 
         acmeRobots.criarRobosEClientes();
@@ -59,13 +58,13 @@ public class TelaCriarLocacao extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 try {
                     int numero = Integer.valueOf(numeroField.getText());
-                    String situacaoString = situacaoField.getText();
+                    //String situacaoString = situacaoField.getText();
                     String dataInicioString = dataInicioField.getText();
                     int dataFim = Integer.valueOf(dataFimField.getText());
                     int codigoCliente = Integer.valueOf(clienteField.getText());
 
                     Date dataInicio = acmeRobots.dataConvertida(dataInicioString);
-                    Status situacao = Status.valueOf(situacaoString);
+                    //Status situacao = Status.valueOf(situacaoString);
                     Cliente cliente = acmeRobots.consultaCodigoCliente(codigoCliente);
 
                     if(cliente == null) {
@@ -73,7 +72,7 @@ public class TelaCriarLocacao extends JDialog {
                     } else {
                     Locacao novaLocacao = new Locacao(numero, Status.CADASTRADA, dataInicio, dataFim, cliente);
 
-                    if(acmeRobots.adicionarLocacao(novaLocacao) && acmeRobots.adicionarReserva(novaLocacao)) {
+                    if( acmeRobots.adicionarReserva(novaLocacao)) {
                         numeroField.setText("");
                         situacaoField.setText("");
                         dataInicioField.setText("");

@@ -9,7 +9,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TelaD {
-    ACMERobots acmeRobots;
+    private ACMERobots acmeRobots = ACMERobots.getInstance();
+
     private Aplicacao aplicacao ;
     private JPanel panel1;
     private JTextField nivelField;
@@ -23,9 +24,8 @@ public class TelaD {
     private JButton limparButton;
 
 
-    public TelaD(Aplicacao app, ACMERobots robots) {
+    public TelaD(Aplicacao app) {
         aplicacao = app;
-        acmeRobots = robots;
 
         fecharButton.addActionListener(new ActionListener() {
             @Override

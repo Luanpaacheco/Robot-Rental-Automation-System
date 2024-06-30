@@ -16,10 +16,10 @@ public class TelaIndividual {
     private JTextField labelCodigo;
     private JTextField labelNome;
     Aplicacao aplicacao;
-    ACMERobots client;
-   public TelaIndividual(Aplicacao aplicacao, ACMERobots client){
+    private ACMERobots acmeRobots = ACMERobots.getInstance();
+
+    public TelaIndividual(Aplicacao aplicacao){
        this.aplicacao=aplicacao;
-       this.client=client;
 
 
        cadastrar.addActionListener(new ActionListener() {
@@ -31,7 +31,7 @@ public class TelaIndividual {
                    String cpf =labelCPF.getText();
                    Individual novoCliente = new Individual(codigo, nome, cpf);
 
-                   if (client.cadastraCliente(novoCliente)) {
+                   if (acmeRobots.cadastraCliente(novoCliente)) {
                        JOptionPane.showMessageDialog(aplicacao, "Cadastro confirmado!");
                    } else
                        JOptionPane.showMessageDialog(aplicacao, "Esse cliente já foi cadastrado");

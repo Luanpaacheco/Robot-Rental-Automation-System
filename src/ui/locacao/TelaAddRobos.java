@@ -11,7 +11,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TelaAddRobos extends JDialog {
-    ACMERobots acmeRobots;
+    private ACMERobots acmeRobots = ACMERobots.getInstance();
     Aplicacao aplicacao;
     private JPanel contentPane;
     private JTextArea textAreaResult;
@@ -22,8 +22,8 @@ public class TelaAddRobos extends JDialog {
     private JButton fecharButton;
     private JButton limparButton;
 
-    public TelaAddRobos(Aplicacao aplicacao, ACMERobots acmeRobots) {
-        this.acmeRobots = acmeRobots;
+    public TelaAddRobos(Aplicacao aplicacao) {
+
         this.aplicacao = aplicacao;
 
 
@@ -36,8 +36,10 @@ public class TelaAddRobos extends JDialog {
                     int idRobo = Integer.valueOf(robosField.getText());
 
                     Robo robo = acmeRobots.consultaIdRobo(idRobo);
-                    int numero = acmeRobots.getListaLocacoes().size() -1;
+                    int numero = acmeRobots.getListaReserva().peek().getNumero();
+                    System.out.println(numero);
                     String cliente = acmeRobots.getListaLocacoes().get(numero).getCliente().getNome();
+                    System.out.println(cliente.toString());
 
                     if(robo == null) {
                         JOptionPane.showMessageDialog(aplicacao, "Robo nao cadastrado.");
@@ -46,7 +48,7 @@ public class TelaAddRobos extends JDialog {
 
                     if(acmeRobots.adicionarRoboNaReserva(numero, robo)) {
                         JOptionPane.showMessageDialog(aplicacao, "Robo adicionado na locacao de " + cliente);
-                        textAreaResult.setText(acmeRobots.getListaLocacoes().get(numero).getListaRobos().toString());
+                        textAreaResult.setText(acmeRobots.consultaLocacaoPorNuumeroReserva(numero).getListaRobos().toString());
                         robosField.setText("");
                     } else {
                         JOptionPane.showMessageDialog(aplicacao, "Esse robo já foi alugado.");
@@ -55,7 +57,9 @@ public class TelaAddRobos extends JDialog {
                     }
 
                 }catch (Exception c){
-                    JOptionPane.showMessageDialog(aplicacao, "Campos prenchidos de forma incorreta.");
+                    JOptionPane.showMessageDialog(aplicacao, c.getLocalizedMessage());
+                    System.out.println(c.getLocalizedMessage());
+                    System.out.println(c.toString());
                 }
             }
         });

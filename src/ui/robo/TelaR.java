@@ -15,10 +15,11 @@ import java.util.Comparator;
 import java.util.List;
 
 public class TelaR {
+
     private CarregarDados carregarJson;
     private ConverteJson conversor;
     private Aplicacao aplicacao;
-    private ACMERobots acmeRobots;
+    private ACMERobots acmeRobots = ACMERobots.getInstance();
     private List<Robo> listaRobos;
     private JPanel panel1;
     private JButton limparButton;
@@ -34,8 +35,7 @@ public class TelaR {
     private JButton carregarDadosButton;
     private JTextField carregarField;
 
-    public TelaR(Aplicacao app, ACMERobots robots) {
-        acmeRobots = robots;
+    public TelaR(Aplicacao app) {
         aplicacao = app;
         listaRobos = acmeRobots.getListaRobos();
         conversor =  new ConverteJson(acmeRobots);

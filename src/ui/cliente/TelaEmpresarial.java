@@ -10,20 +10,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 public class TelaEmpresarial {
     private Aplicacao aplicacao;
-    private ACMERobots client;
+    private ACMERobots acmeRobots = ACMERobots.getInstance();
+
     private JPanel principal;
     private JTextField labelCodigo;
     private JTextField labelAno;
     
     private JButton voltar;
     private JButton cadastra;
-
     private JLabel ano;
     private JTextField labelNome;
 
-    public TelaEmpresarial(Aplicacao aplicacao, ACMERobots client){
+    public TelaEmpresarial(Aplicacao aplicacao){
         this.aplicacao=aplicacao;
-        this.client=client;
+
 
 
         cadastra.addActionListener(new ActionListener() {
@@ -35,7 +35,7 @@ public class TelaEmpresarial {
                     int ano =Integer.valueOf(labelAno.getText());
                     Empresarial novoCliente = new Empresarial(codigo, nome, ano);
 
-                    if (client.cadastraCliente(novoCliente)) {
+                    if (acmeRobots.cadastraCliente(novoCliente)) {
                         JOptionPane.showMessageDialog(aplicacao, "Cadastro confirmado!");
                     } else
                         JOptionPane.showMessageDialog(aplicacao, "Esse cliente já foi cadastrado");

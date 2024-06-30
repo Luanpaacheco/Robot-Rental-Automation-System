@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 public class TelaResultados extends JDialog {
-    ACMERobots acmeRobots;
+    private ACMERobots acmeRobots = ACMERobots.getInstance();
     Aplicacao aplicacao;
     private JPanel contentPane;
     private JTextArea textAreaResultado;
@@ -17,8 +17,7 @@ public class TelaResultados extends JDialog {
     private JButton exibirTodasButton;
 
 
-    public TelaResultados(Aplicacao aplicacao, ACMERobots acmeRobots) {
-        this.acmeRobots = acmeRobots;
+    public TelaResultados(Aplicacao aplicacao) {
         this.aplicacao = aplicacao;
         int numero = acmeRobots.getListaLocacoes().size() -1;
 

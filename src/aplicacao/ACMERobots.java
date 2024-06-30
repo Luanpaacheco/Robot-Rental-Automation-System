@@ -15,9 +15,7 @@ import dados.robo.Robo;
 import dados.Locacao;
 import org.springframework.scheduling.config.TaskNamespaceHandler;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Date;
+import java.util.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
@@ -27,14 +25,14 @@ public class ACMERobots {
     private List<Robo> listaRobos = new ArrayList<>();
     private List<Cliente>clientes;
     private ArrayList<Locacao> listaLocacoes;
-    private ArrayList<Locacao> reservas;
+    private Queue<Locacao> reservas;
 
 
     public ACMERobots() {
         this.listaRobos = listaRobos;
         this.clientes = new ArrayList<>();
         this.listaLocacoes = new ArrayList<>();
-        this.reservas = new ArrayList<>();
+        this.reservas = new LinkedList<>();
     }
 
     public void criarRobosEClientes() {
@@ -99,12 +97,7 @@ public class ACMERobots {
 
     public boolean adicionarRoboNaReserva(int numero, Robo novoRobo) {
         //Locacao l = listaLocacoes.get(numero);
-        Locacao r = reservas.get(numero);
-        for(Robo robo : r.getListaRobos()) {
-            if(robo == novoRobo) {
-                return false;
-            }
-        }
+        Locacao r = getListaReserva();
         r.adicionaRobos(novoRobo);
         return true;
         //return false;
@@ -192,6 +185,9 @@ public class ACMERobots {
         return listaLocacoes;
     }
 
+    public Queue<Locacao> getListaReserva() {
+        return reservas;
+    }
 
     /*
 
@@ -232,26 +228,25 @@ public class ACMERobots {
     }
 
     public void processarLocacoes() {
-        int x = 0;
-        for(Locacao locacao : listaLocacoes) {
-            if(locacao.getSituacao() == Status.CADASTRADA) {
 
-                //x = locacao.getNumero();
-                //for(Locacao locReserva : reservas) {
-                    for(Robo robo : consultaLocacaoPorNuumeroReserva(locacao.getNumero()).getListaRobos()) {
-                        if(locacao.getListaRobos().contains(robo)){
-                            break;
-                        }else{
-                            locacao.adicionaRobos(robo);
-                            locacao.setSituacao(Status.EXECUTANDO);
+        if(listaLocacoes.isEmpty()) {
+            listaLocacoes.add(reservas.poll());
+        }
 
-                        }
+        for(Locacao locacao : reservas) {
+            for(Locacao loc : listaLocacoes) {
+                for(Robo robo : loc.getListaRobos())
+                    for(Robo rob : locacao.getListaRobos()) {
+                    if(robo != rob) {
+                        listaLocacoes.add(reservas.poll());
+                        locacao.setSituacao(Status.EXECUTANDO);
                     }
-                //}
-
+                }
             }
         }
+
     }
 
 
 }
+

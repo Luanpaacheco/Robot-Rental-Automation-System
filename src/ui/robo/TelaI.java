@@ -9,7 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TelaI {
-    ACMERobots acmeRobots;
+    private ACMERobots acmeRobots = ACMERobots.getInstance();
     private Aplicacao aplicacao ;
     private JPanel panel1;
     private JTextField setorField;
@@ -23,9 +23,8 @@ public class TelaI {
     private JButton limparButton;
 
 
-    public TelaI(Aplicacao app,ACMERobots robots) {
+    public TelaI(Aplicacao app) {
         aplicacao = app;
-        acmeRobots = robots;
 
         fecharButton.addActionListener(new ActionListener() {
             @Override

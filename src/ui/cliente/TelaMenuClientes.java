@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 import java.util.Comparator;
 
 public class TelaMenuClientes {
-    private ACMERobots acmeRobots;
+    private ACMERobots acmeRobots = ACMERobots.getInstance();
     private Aplicacao aplicacao;
     private JButton INDIVIDUAL;
     private JButton EMPRESARIAL;
@@ -20,9 +20,8 @@ public class TelaMenuClientes {
     private JLabel Legenda;
     private JButton limpar;
 
-    public TelaMenuClientes(Aplicacao aplicacao, ACMERobots acmeRobots) {
+    public TelaMenuClientes(Aplicacao aplicacao) {
         this.aplicacao=aplicacao;
-        this.acmeRobots=acmeRobots;
 
         INDIVIDUAL.addActionListener(new ActionListener() {
             @Override

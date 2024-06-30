@@ -9,7 +9,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TelaA {
-    ACMERobots acmeRobots;
+    private ACMERobots acmeRobots = ACMERobots.getInstance();
+
     private Aplicacao aplicacao ;
     private JButton cadastrarButton;
     private JButton fecharButton;
@@ -24,9 +25,8 @@ public class TelaA {
     private JButton limparButton;
 
 
-    public TelaA(Aplicacao app,ACMERobots robots) {
+    public TelaA(Aplicacao app) {
         aplicacao = app;
-        acmeRobots = robots;
 
         fecharButton.addActionListener(new ActionListener() {
             @Override

@@ -16,16 +16,15 @@ import javax.swing.*;
 
 public class Aplicacao extends JFrame {
     ACMERobots acmeRobots = new ACMERobots();
-    private TelaMenuClientes telaMenuClientes = new TelaMenuClientes(this,acmeRobots);
-    private TelaIndividual telaIndividual = new TelaIndividual(this,acmeRobots);
-    private TelaEmpresarial telaEmpresarial= new TelaEmpresarial(this, acmeRobots);
-    private TelaMenu telaMenu = new TelaMenu(this, acmeRobots);
-    private TelaR tela = new TelaR(this, acmeRobots);
-    private TelaD telaD = new TelaD(this, acmeRobots);
-    private TelaA telaA = new TelaA(this, acmeRobots);
-    private TelaI telaI = new TelaI(this, acmeRobots);
+    private TelaMenuClientes telaMenuClientes = new TelaMenuClientes(this);
+    private TelaEmpresarial telaEmpresarial= new TelaEmpresarial(this);
+    private TelaMenu telaMenu = new TelaMenu(this);
+    private TelaR tela = new TelaR(this);
+    private TelaD telaD = new TelaD(this);
+    private TelaA telaA = new TelaA(this);
+    private TelaI telaI = new TelaI(this);
     //private TelaAddRobos telaAddRobos = new TelaAddRobos(this, acmeRobots);
-    private TelaCriarLocacao telaCriarLocacao = new TelaCriarLocacao(this, acmeRobots);
+    private TelaCriarLocacao telaCriarLocacao = new TelaCriarLocacao(this);
 
     public Aplicacao(){
         super();
@@ -68,6 +67,7 @@ public class Aplicacao extends JFrame {
                 this.setSize(1000,800);
                 break;
             case 6:
+                TelaIndividual telaIndividual = new TelaIndividual(this);
                 this.setContentPane(telaIndividual.getPainel());
                 this.pack();
                 this.setSize(1000,800);
@@ -83,13 +83,13 @@ public class Aplicacao extends JFrame {
                 this.setSize(1000,800);
                 break;
             case 9:
-                TelaAddRobos telaAddRobos = new TelaAddRobos(this, acmeRobots);
+                TelaAddRobos telaAddRobos = new TelaAddRobos(this);
                 this.setContentPane(telaAddRobos.getPainel());
                 this.pack();
                 this.setSize(1000,800);
                 break;
             case 10:
-                TelaResultados telaResultados = new TelaResultados(this, acmeRobots);
+                TelaResultados telaResultados = new TelaResultados(this);
                 this.setContentPane(telaResultados.getPainel());
                 this.pack();
                 this.setSize(1000,800);

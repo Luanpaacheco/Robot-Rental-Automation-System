@@ -1,17 +1,21 @@
 package service;
 
+import ch.qos.logback.core.net.server.Client;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.databind.type.CollectionType;
+import dados.cliente.Cliente;
+import dados.cliente.Empresarial;
+import dados.cliente.Individual;
 import dados.robo.*;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
+import static java.util.Collections.*;
 
 public class CarregarDados {
 
@@ -54,9 +58,7 @@ public class CarregarDados {
                     primeiraLinha = false;
                     continue; // Pula a primeira linha (cabeçalho)
                 }
-
                 String[] dados = linha.split(";");
-
                 // Extrai os dados do CSV
                 int id = Integer.parseInt(dados[0].trim());
                 String modelo = dados[1].trim();
@@ -81,5 +83,56 @@ public class CarregarDados {
         }
 
         return robos;
+    }
+    public List<Cliente> carregarClientesDados(String nomeArquivo) {
+        Cliente cliente = null;
+
+        List<Cliente> clientes = new ArrayList<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(nomeArquivo + ".csv"))) {
+            String linha;
+            boolean primeiraLinha = true; // Para ignorar o cabeçalho, se houver
+
+            while ((linha = br.readLine()) != null) {
+                if (primeiraLinha) {
+                    primeiraLinha = false;
+                    continue; // Pula a primeira linha (cabeçalho)
+                }
+                String[] dados = linha.split(";");
+                if (dados.length < 4) {
+                    System.err.println("Erro: linha incompleta no arquivo '" + nomeArquivo + "'");
+                    continue; // Pular linhas que não têm dados suficientes
+                }
+
+                // Extrai os dados do CSV
+                int codigo = Integer.parseInt(dados[0].trim());
+                String nome = dados[1].trim();
+                int tipo = Integer.parseInt(dados[2].trim());
+                String ano_cpf = dados[3].trim();
+
+                if (tipo == 1) {
+                    cliente = new Individual(codigo, nome, ano_cpf);
+                } else if (tipo == 2) {
+                    cliente = new Empresarial(codigo, nome, Integer.parseInt(ano_cpf));
+                } else {
+                    System.err.println("Erro: tipo de cliente inválido na linha " + linha);
+                    continue; // Pular linhas com tipos de cliente inválidos
+                }
+
+                clientes.add(cliente);
+            }
+            System.out.println("Dados carregados com sucesso do arquivo '" + nomeArquivo + "'");
+        } catch (FileNotFoundException e) {
+            System.err.println("Erro: arquivo '" + nomeArquivo + "' não encontrado");
+            e.printStackTrace();
+        } catch (IOException e) {
+            System.err.println("Erro ao ler o arquivo '" + nomeArquivo + "': " + e.getMessage());
+            e.printStackTrace();
+        } catch (NumberFormatException e) {
+            System.err.println("Erro ao converter número no arquivo '" + nomeArquivo + "': " + e.getMessage());
+            e.printStackTrace();
+        }
+
+        return clientes; // Retorna a lista de clientes, mesmo que vazia em caso de erro
     }
 }
