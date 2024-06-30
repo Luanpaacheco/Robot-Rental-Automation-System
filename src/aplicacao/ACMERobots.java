@@ -2,11 +2,15 @@ package aplicacao;
 
 import dados.Status;
 import dados.cliente.Cliente;
+import dados.cliente.Empresarial;
+import dados.cliente.Individual;
 import dados.robo.Agricola;
 import dados.robo.Domestico;
 import dados.robo.Industrial;
+
 import dados.cliente.Empresarial;
 import dados.cliente.Individual;
+
 import dados.robo.Robo;
 import dados.Locacao;
 import org.springframework.scheduling.config.TaskNamespaceHandler;
