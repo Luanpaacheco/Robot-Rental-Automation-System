@@ -147,6 +147,24 @@ public class ACMERobots {
             }
         } return null;
     }
+    public Locacao consultaLocacaoPorNuumero(int numero) {
+
+        for (Locacao c : listaLocacoes){
+            if(c.getNumero()==numero){
+                return c;
+            }
+        } return null;
+    }
+
+    public Locacao consultaLocacaoPorNuumeroReserva(int numero) {
+
+        for (Locacao c : reservas){
+            if(c.getNumero()==numero){
+                return c;
+            }
+        } return null;
+    }
+
 
     /*
        public Cliente consultaCodigo(int codigo) {
@@ -217,16 +235,20 @@ public class ACMERobots {
         int x = 0;
         for(Locacao locacao : listaLocacoes) {
             if(locacao.getSituacao() == Status.CADASTRADA) {
-                x = locacao.getNumero();
+
+                //x = locacao.getNumero();
                 //for(Locacao locReserva : reservas) {
-                    for(Robo robo : reservas.get(x).getListaRobos()) {
-                        if(robo ja foi) {
+                    for(Robo robo : consultaLocacaoPorNuumeroReserva(locacao.getNumero()).getListaRobos()) {
+                        if(locacao.getListaRobos().contains(robo)){
                             break;
+                        }else{
+                            locacao.adicionaRobos(robo);
+                            locacao.setSituacao(Status.EXECUTANDO);
+
                         }
-                    locacao.adicionaRobos(robo);
                     }
                 //}
-                locacao.setSituacao(Status.EXECUTANDO);
+
             }
         }
     }
