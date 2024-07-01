@@ -20,15 +20,15 @@ public enum Status {
 		return this == CADASTRADA || this == EXECUTANDO;
 	}
 
-	public Status iniciarLocacao() {
-		if (this == CADASTRADA) {
-			return EXECUTANDO;
-		} else {
-			throw new IllegalStateException("Não é possível iniciar locação nesta situação.");
-		}
-	}
+//	public Status iniciarLocacao() {
+//		if (this == CADASTRADA) {
+//			return EXECUTANDO;
+//		} else {
+//			throw new IllegalStateException("Não é possível iniciar locação nesta situação.");
+//		}
+//	}
 
-	public Status finalizarLocacao() {
+		public Status finalizarLocacao() {
 		if (this == EXECUTANDO) {
 			return FINALIZADA;
 		} else {

@@ -85,13 +85,13 @@ public class TelaMenu {
         consultarTodsLocacoes.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                app.mudaPainel(12);
             }
         });
         mudarSituacaoLocacao.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                app.mudaPainel(13);
             }
         });
         relatorioGeralButton.addActionListener(new ActionListener() {

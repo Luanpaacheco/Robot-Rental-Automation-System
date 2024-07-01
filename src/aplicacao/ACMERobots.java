@@ -26,6 +26,7 @@ public class ACMERobots {
     private List<Cliente>clientes;
     private ArrayList<Locacao> listaLocacoes;
     private Queue<Locacao> reservas;
+    private Status status;
 
 
     public ACMERobots() {
@@ -210,7 +211,8 @@ public class ACMERobots {
             if(c.getNumero()==numero){
                 return c;
             }
-        } return null;
+        }
+        return null;
     }
 
 
@@ -351,6 +353,64 @@ public class ACMERobots {
 
         reservas.addAll(reservasPendentes);
     }
+    public boolean alterarSituacao(int numero, String situacao) {
+        Locacao locacao = consultaLocacaoPorNuumero(numero);
+
+        // Se locacao for null, tenta consultar por reserva
+        if (locacao == null) {
+            locacao = consultaLocacaoPorNuumeroReserva(numero);
+        }
+
+        // Se ainda assim locacao for null, retorna false
+        if (locacao == null) {
+            System.out.println("Locação não encontrada.");
+            return false;
+        }
+
+        // Verifica a situação atual da locação e atualiza conforme a nova situação
+        if (locacao.getSituacao() == Status.EXECUTANDO) {
+            if ("CANCELADA".equals(situacao)) {
+                locacao.setSituacao(Status.CANCELADA);
+                System.out.println("Locação cancelada com sucesso.");
+                return true;
+            } else if ("FINALIZADA".equals(situacao)) {
+                locacao.setSituacao(Status.FINALIZADA);
+                System.out.println("Locação finalizada com sucesso.");
+                return true;
+            }
+        } else if (locacao.getSituacao() == Status.CADASTRADA) {
+            if ("CANCELADA".equals(situacao)) {
+                locacao.setSituacao(Status.CANCELADA);
+                System.out.println("Locação cancelada com sucesso.");
+                return true;
+            } else if ("FINALIZADA".equals(situacao)) {
+                locacao.setSituacao(Status.FINALIZADA);
+                System.out.println("Locação finalizada com sucesso.");
+                return true;
+            }
+        }
+
+        // Se nenhum dos casos anteriores foi atendido, imprime mensagem e retorna false
+        System.out.println("Operação não permitida para o estado atual da locação.");
+        return false;
+    }
+
+
+
+
+
+
+
+
+    public Locacao locacaoCerta(int numero) {
+        Locacao locacao = consultaLocacaoPorNuumero(numero);
+        if(locacao == null) {
+            locacao = consultaLocacaoPorNuumeroReserva(numero);
+        }
+        return locacao;
+    }
+
+
 
 }
 

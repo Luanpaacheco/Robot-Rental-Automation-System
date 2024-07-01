@@ -70,4 +70,16 @@ public class Locacao {
 				"\n" + "Data Fim: " + dataFim + " dias;" +
 				"\n" + "Robos alugados: " + listaDeRobos + ";";
 	}
+
+
+	public String toString2() {
+		return "\n" + "Locacao numero: " + numero + ";" +
+				"\n" + "Cliente: " + cliente.toString() + ";" +
+				"\n" + "Situacao: " + situacao + ";" +
+				"\n" + "Data Inicio: " + dataInicio + ";" +
+				"\n" + "Data Fim: " + dataFim + " dias;" +
+				"\n" + "Robos alugados: " + listaDeRobos + ";";
+	}
+
+
 }

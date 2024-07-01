@@ -100,6 +100,18 @@ public class Aplicacao extends JFrame {
                 this.pack();
                 this.setSize(1000,800);
                 break;
+            case 12:
+                TelaConsultarLocacoes telaConsultarLocacoes = new TelaConsultarLocacoes(this);
+                this.setContentPane(telaConsultarLocacoes.getPainel());
+                this.pack();
+                this.setSize(1000,800);
+                break;
+            case 13:
+                TelaAlteraSituacao telaAlteraSituacao = new TelaAlteraSituacao(this);
+                this.setContentPane(telaAlteraSituacao.getPainel());
+                this.pack();
+                this.setSize(1000,800);
+                break;
         }
     }
 }
