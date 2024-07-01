@@ -7,30 +7,23 @@
     <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" afterDir="false" />
-    </list>
-    <list id="e5a63bb8-3985-44e2-a473-e3978c759677" name="Changes by 21lui" comment="">
-      <change beforePath="$PROJECT_DIR$/src/service/CarregarDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/CarregarDados.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Aplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaIndividual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaIndividual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaResultados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaResultados.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/robo/TelaA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/robo/TelaD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/robo/TelaI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/robo/TelaR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos.class" afterDir="false" />
     </list>
+    <list id="e5a63bb8-3985-44e2-a473-e3978c759677" name="Changes by 21lui" comment="" />
     <list id="a7dcceac-b8af-404a-8e12-2bb212f7b63f" name="Changes by arthu" comment="">
       <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaResultados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaResultados.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,45 +43,31 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/ui/TelaMenu.java">
+    <file path="$PROJECT_DIR$/src/ui/locacao/TelaResultados.java">
       <ranges>
-        <range start1="3" end1="3" start2="3" end2="5" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="11" end1="11" start2="13" end2="14" changelist="e5a63bb8-3985-44e2-a473-e3978c759677" />
-        <range start1="23" end1="23" start2="26" end2="29" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="25" end1="26" start2="31" end2="33" changelist="e5a63bb8-3985-44e2-a473-e3978c759677" />
-        <range start1="61" end1="61" start2="68" end2="92" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/aplicacao/ACMERobots.java">
-      <ranges>
-        <range start1="17" end1="20" start2="17" end2="18" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="29" end1="30" start2="27" end2="28" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="36" end1="37" start2="34" end2="35" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="101" end1="107" start2="99" end2="100" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="194" end1="194" start2="187" end2="190" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="234" end1="237" start2="230" end2="230" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="238" end1="251" start2="231" end2="244" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="253" end1="253" start2="246" end2="247" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="257" end1="257" start2="251" end2="252" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java">
-      <ranges>
-        <range start1="15" end1="16" start2="15" end2="16" changelist="e5a63bb8-3985-44e2-a473-e3978c759677" />
-        <range start1="30" end1="32" start2="30" end2="31" changelist="e5a63bb8-3985-44e2-a473-e3978c759677" />
-        <range start1="61" end1="62" start2="60" end2="61" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="67" end1="68" start2="66" end2="67" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="75" end1="76" start2="74" end2="75" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="21" end1="22" start2="21" end2="22" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="23" end1="26" start2="23" end2="26" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="37" end1="38" start2="37" end2="38" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java">
       <ranges>
-        <range start1="13" end1="14" start2="13" end2="14" changelist="e5a63bb8-3985-44e2-a473-e3978c759677" />
-        <range start1="24" end1="26" start2="24" end2="26" changelist="e5a63bb8-3985-44e2-a473-e3978c759677" />
-        <range start1="38" end1="39" start2="38" end2="40" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="40" end1="40" start2="41" end2="42" changelist="e5a63bb8-3985-44e2-a473-e3978c759677" />
-        <range start1="48" end1="49" start2="50" end2="51" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="57" end1="58" start2="59" end2="62" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="38" end1="42" start2="38" end2="42" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="48" end1="49" start2="48" end2="49" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="50" end1="51" start2="50" end2="51" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/aplicacao/ACMERobots.java">
+      <ranges>
+        <range start1="97" end1="98" start2="97" end2="98" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="99" end1="103" start2="99" end2="110" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="105" end1="105" start2="112" end2="134" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="229" end1="229" start2="258" end2="280" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
+        <range start1="230" end1="233" start2="281" end2="288" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
+        <range start1="235" end1="242" start2="290" end2="307" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
+        <range start1="244" end1="246" start2="309" end2="313" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
+        <range start1="247" end1="248" start2="314" end2="324" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
+        <range start1="249" end1="249" start2="325" end2="327" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
       </ranges>
     </file>
   </component>
@@ -110,7 +89,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/luanp/Documents/PUCRS/POO/TrabalhoFinal/src/ui/cliente",

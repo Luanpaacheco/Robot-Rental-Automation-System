@@ -95,13 +95,42 @@ public class ACMERobots {
         return reservas.add(novaLocacao);
     }
 
-    public boolean adicionarRoboNaReserva(int numero, Robo novoRobo) {
+    public boolean adicionarRoboNaReserva( Robo novoRobo) {
         //Locacao l = listaLocacoes.get(numero);
-        Locacao r = getListaReserva();
-        r.adicionaRobos(novoRobo);
-        return true;
-        //return false;
+        Locacao ultimaLocacao = null;
+
+        for (Locacao locacao : getListaReserva()) {
+            ultimaLocacao = locacao;
+        }
+
+        if (ultimaLocacao != null) {
+            ultimaLocacao.adicionaRobos(novoRobo);
+            return true;
+        }
+      return false;
     }
+
+    public Cliente getUltimoClienteReserva() {
+        Locacao ultimaLocacao = null;
+
+        for (Locacao locacao : getListaReserva()) {
+            ultimaLocacao = locacao;
+        }
+
+        return ultimaLocacao.getCliente();
+    }
+
+    public Locacao getUltimaLocacaoReserva() {
+        Locacao ultimaLocacao = null;
+
+        for (Locacao locacao : getListaReserva()) {
+            ultimaLocacao = locacao;
+        }
+
+        return ultimaLocacao;
+    }
+
+
 
     public Date dataConvertida(String dataString) {
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
@@ -227,26 +256,75 @@ public class ACMERobots {
         return valorFinal;
     }
 
+//    public void processarLocacoes() {
+//
+//        if(listaLocacoes.isEmpty()) {
+//            listaLocacoes.add(reservas.poll());
+//            listaLocacoes.get(0).setSituacao(Status.EXECUTANDO);
+//        }
+//
+//        for(Locacao locacao : reservas) {
+//            for(Locacao loc : listaLocacoes) {
+//                for(Robo robo : loc.getListaRobos())
+//                    for(Robo rob : locacao.getListaRobos()) {
+//                    if(robo != rob) {
+//                        listaLocacoes.add(reservas.poll());
+//                        locacao.setSituacao(Status.EXECUTANDO);
+//                    }
+//                }
+//            }
+//        }
+//
+//    }
+
+
     public void processarLocacoes() {
-
-        if(listaLocacoes.isEmpty()) {
-            listaLocacoes.add(reservas.poll());
-        }
-
-        for(Locacao locacao : reservas) {
-            for(Locacao loc : listaLocacoes) {
-                for(Robo robo : loc.getListaRobos())
-                    for(Robo rob : locacao.getListaRobos()) {
-                    if(robo != rob) {
-                        listaLocacoes.add(reservas.poll());
-                        locacao.setSituacao(Status.EXECUTANDO);
-                    }
-                }
+        if (listaLocacoes.isEmpty()) {
+            Locacao primeiraReserva = reservas.poll();
+            if (primeiraReserva != null) {
+                listaLocacoes.add(primeiraReserva);
+                primeiraReserva.setSituacao(Status.EXECUTANDO);
+                //System.out.println("Primeira locação adicionada: " + primeiraReserva);
             }
         }
 
-    }
+        Queue<Locacao> reservasPendentes = new LinkedList<>();
 
+        while (!reservas.isEmpty()) {
+            Locacao reservaAtual = reservas.poll();
+            boolean temRoboRepetido = false;
+
+            for (Locacao locacao : listaLocacoes) {
+                for (Robo roboLocacao : locacao.getListaRobos()) {
+                    for (Robo roboReserva : reservaAtual.getListaRobos()) {
+                        if (roboLocacao.equals(roboReserva)) {
+                            temRoboRepetido = true;
+                            //System.out.println("Robô repetido encontrado: " + roboReserva);
+                            break;
+                        }
+                    }
+                    if (temRoboRepetido) {
+                        break;
+                    }
+                }
+                if (temRoboRepetido) {
+                    break;
+                }
+            }
+
+            if (!temRoboRepetido) {
+                listaLocacoes.add(reservaAtual);
+                reservaAtual.setSituacao(Status.EXECUTANDO);
+                //System.out.println("Locação adicionada: " + reservaAtual);
+            } else {
+                reservaAtual.setSituacao(Status.CADASTRADA);
+                reservasPendentes.add(reservaAtual);
+                //System.out.println("Locação com robôs repetidos: " + reservaAtual);
+            }
+        }
+
+        reservas.addAll(reservasPendentes);
+    }
 
 }
 

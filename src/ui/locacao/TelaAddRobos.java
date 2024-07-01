@@ -36,19 +36,19 @@ public class TelaAddRobos extends JDialog {
                     int idRobo = Integer.valueOf(robosField.getText());
 
                     Robo robo = acmeRobots.consultaIdRobo(idRobo);
-                    int numero = acmeRobots.getListaReserva().peek().getNumero();
-                    System.out.println(numero);
-                    String cliente = acmeRobots.getListaLocacoes().get(numero).getCliente().getNome();
-                    System.out.println(cliente.toString());
+                    //int numero = acmeRobots.getListaReserva().peek().getNumero();
+                    //System.out.println(numero);
+                    String cliente = acmeRobots.getUltimoClienteReserva().getNome();
+                    //System.out.println(cliente.toString());
 
                     if(robo == null) {
                         JOptionPane.showMessageDialog(aplicacao, "Robo nao cadastrado.");
                         robosField.setText("");
                     } else {
 
-                    if(acmeRobots.adicionarRoboNaReserva(numero, robo)) {
+                    if(acmeRobots.adicionarRoboNaReserva( robo)) {
                         JOptionPane.showMessageDialog(aplicacao, "Robo adicionado na locacao de " + cliente);
-                        textAreaResult.setText(acmeRobots.consultaLocacaoPorNuumeroReserva(numero).getListaRobos().toString());
+                        textAreaResult.setText(acmeRobots.getUltimaLocacaoReserva().getListaRobos().toString());
                         robosField.setText("");
                     } else {
                         JOptionPane.showMessageDialog(aplicacao, "Esse robo já foi alugado.");

@@ -70,7 +70,7 @@ public class TelaMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
                 acmeRobots.processarLocacoes();
-                for(Locacao l : acmeRobots.getListaLocacoes()){
+                for(Locacao l : acmeRobots.getListaReserva()){
                     if(l.getSituacao()== Status.CADASTRADA){
                         System.out.println(l.toString());
                     }

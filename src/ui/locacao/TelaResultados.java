@@ -19,11 +19,11 @@ public class TelaResultados extends JDialog {
 
     public TelaResultados(Aplicacao aplicacao) {
         this.aplicacao = aplicacao;
-        int numero = acmeRobots.getListaLocacoes().size() -1;
+        //int numero = acmeRobots.getListaLocacoes().size() -1;
 
-        atualizarResultado();
-        textAreaResultado.setText(acmeRobots.getListaLocacoes().get(numero).toString());
-        JOptionPane.showMessageDialog(aplicacao, acmeRobots.getListaLocacoes().get(numero).toString());
+        //atualizarResultado();
+        textAreaResultado.setText(acmeRobots.getUltimaLocacaoReserva().getListaRobos().toString());
+        JOptionPane.showMessageDialog(aplicacao, acmeRobots.getUltimaLocacaoReserva().toString());
 
         fecharButton.addActionListener(new ActionListener() {
             @Override
@@ -35,7 +35,7 @@ public class TelaResultados extends JDialog {
         exibirTodasButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                textAreaResultado.setText(acmeRobots.getListaLocacoes().toString() + "\n");
+                textAreaResultado.setText(acmeRobots.getListaReserva().toString() + "\n");
             }
         });
 

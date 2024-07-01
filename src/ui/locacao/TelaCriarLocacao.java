@@ -6,8 +6,6 @@ import dados.Locacao;
 import dados.Status;
 import ui.Aplicacao;
 
-import java.util.ArrayList;
-
 import javax.swing.*;
 import java.awt.event.*;
 import java.util.Date;
@@ -26,6 +24,7 @@ public class TelaCriarLocacao extends JDialog {
     private JButton fecharButton;
     private JButton continuarButton;
     private JButton limparButton;
+    private JButton voltar;
 
 
     public TelaCriarLocacao(Aplicacao aplicacao) {
@@ -92,6 +91,12 @@ public class TelaCriarLocacao extends JDialog {
                 }catch (Exception c){
                     JOptionPane.showMessageDialog(aplicacao, "Campos prenchidos de forma incorreta.");
                 }
+            }
+        });
+        voltar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aplicacao.mudaPainel(0);
             }
         });
     }
