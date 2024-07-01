@@ -29,7 +29,7 @@ public class Domestico extends Robo{
 
 	@Override
 	public String toString() {
-		return "Informações do Robo Doméstico!\n" + super.toString() + "Nível = " + this.nivel;
+		return "\n" + super.toString() + "Nível = " + this.nivel;
 	}
 	public void determinaValorDiario() {
 		if(nivel == 1){

@@ -69,12 +69,16 @@ public class TelaMenu {
         processarLocacoes.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if(acmeRobots.getListaReserva().isEmpty()) {
+                    System.out.println("Erro: a lista esta vazia.");
+                }
                 acmeRobots.processarLocacoes();
                 for(Locacao l : acmeRobots.getListaReserva()){
                     if(l.getSituacao()== Status.CADASTRADA){
                         System.out.println(l.toString());
                     }
                 }
+
 
             }
         });
@@ -88,6 +92,12 @@ public class TelaMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+            }
+        });
+        relatorioGeralButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                app.mudaPainel(11);
             }
         });
     }

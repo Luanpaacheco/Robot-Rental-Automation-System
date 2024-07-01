@@ -42,6 +42,6 @@ public class Empresarial extends Cliente {
 	public String toString() {
 		return super.toString() +
 				", ano= " + ano +
-				" ]";
+				" ]"+"\n";
 	}
 }

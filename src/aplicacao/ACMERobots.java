@@ -60,6 +60,32 @@ public class ACMERobots {
         clientes.add(cliente4);
         clientes.add(cliente5);
         clientes.add(cliente6);
+        Locacao locacao1 = new Locacao(10, Status.CADASTRADA, dataConvertida("15/04/2004"), 7, cliente1);
+        locacao1.adicionaRobos(robo1);
+        locacao1.adicionaRobos(robo2);
+        reservas.add(locacao1);
+        Locacao locacao2 = new Locacao(11, Status.CADASTRADA, dataConvertida("16/04/2004"), 7, cliente2);
+        locacao2.adicionaRobos(robo3);
+        reservas.add(locacao2);
+        Locacao locacao3 = new Locacao(12, Status.CADASTRADA, dataConvertida("17/04/2004"), 7, cliente3);
+        locacao3.adicionaRobos(robo4);
+        locacao3.adicionaRobos(robo1);
+        reservas.add(locacao3);
+        Locacao locacao4 = new Locacao(13, Status.CADASTRADA, dataConvertida("18/04/2004"), 7, cliente4);
+        locacao4.adicionaRobos(robo5);
+        reservas.add(locacao4);
+        Locacao locacao5 = new Locacao(14, Status.CADASTRADA, dataConvertida("19/04/2004"), 7, cliente5);
+        locacao5.adicionaRobos(robo6);
+        reservas.add(locacao5);
+        Locacao locacao6 = new Locacao(15, Status.CADASTRADA, dataConvertida("20/04/2004"), 7, cliente1);
+        locacao6.adicionaRobos(robo4);
+        reservas.add(locacao6);
+        Locacao locacao7 = new Locacao(16, Status.CADASTRADA, dataConvertida("21/04/2004"), 7, cliente2);
+        locacao7.adicionaRobos(robo2);
+        reservas.add(locacao7);
+        Locacao locacao8 = new Locacao(17, Status.CADASTRADA, dataConvertida("22/04/2004"), 7, cliente3);
+        locacao8.adicionaRobos(robo3);
+        reservas.add(locacao8);
     }
 
 

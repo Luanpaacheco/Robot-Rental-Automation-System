@@ -25,7 +25,7 @@ public class Aplicacao extends JFrame {
     private TelaI telaI = new TelaI(this);
     //private TelaAddRobos telaAddRobos = new TelaAddRobos(this, acmeRobots);
     private TelaCriarLocacao telaCriarLocacao = new TelaCriarLocacao(this);
-
+    //private TelaRelatorioGeral telaRelatorioGeral = new TelaRelatorioGeral(this);
     public Aplicacao(){
         super();
         JPanel painel = telaMenu.getPainel();
@@ -91,6 +91,12 @@ public class Aplicacao extends JFrame {
             case 10:
                 TelaResultados telaResultados = new TelaResultados(this);
                 this.setContentPane(telaResultados.getPainel());
+                this.pack();
+                this.setSize(1000,800);
+                break;
+            case 11:
+                TelaRelatorioGeral telaRelatorioGeral = new TelaRelatorioGeral(this);
+                this.setContentPane(telaRelatorioGeral.getPainel());
                 this.pack();
                 this.setSize(1000,800);
                 break;

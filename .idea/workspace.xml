@@ -5,25 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaRelatorioGeral.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/TelaRelatorioGeral.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaResultados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaResultados.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu.class" afterDir="false" />
     </list>
-    <list id="e5a63bb8-3985-44e2-a473-e3978c759677" name="Changes by 21lui" comment="" />
     <list id="a7dcceac-b8af-404a-8e12-2bb212f7b63f" name="Changes by arthu" comment="">
       <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaResultados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaResultados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/robo/Agricola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Agricola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/robo/Domestico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Domestico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/robo/Industrial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Industrial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Aplicacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -43,31 +42,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/ui/locacao/TelaResultados.java">
+    <file path="$PROJECT_DIR$/src/ui/TelaMenu.java">
       <ranges>
-        <range start1="21" end1="22" start2="21" end2="22" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="23" end1="26" start2="23" end2="26" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="37" end1="38" start2="37" end2="38" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/ui/locacao/TelaAddRobos.java">
-      <ranges>
-        <range start1="38" end1="42" start2="38" end2="42" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="48" end1="49" start2="48" end2="49" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="50" end1="51" start2="50" end2="51" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/aplicacao/ACMERobots.java">
-      <ranges>
-        <range start1="97" end1="98" start2="97" end2="98" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="99" end1="103" start2="99" end2="110" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="105" end1="105" start2="112" end2="134" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="229" end1="229" start2="258" end2="280" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="230" end1="233" start2="281" end2="288" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="235" end1="242" start2="290" end2="307" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="244" end1="246" start2="309" end2="313" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="247" end1="248" start2="314" end2="324" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="249" end1="249" start2="325" end2="327" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
+        <range start1="71" end1="71" start2="71" end2="74" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
+        <range start1="77" end1="77" start2="80" end2="81" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="92" end1="92" start2="96" end2="102" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
       </ranges>
     </file>
   </component>

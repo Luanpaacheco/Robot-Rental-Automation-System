@@ -29,6 +29,6 @@ public class Industrial extends Robo {
 
 	@Override
 	public String toString() {
-		return "Informações do Robo Industrial!\n" + super.toString() + "Setor = " + this.setor ;
+		return "\n" + super.toString() + "Setor = " + this.setor ;
 	}
 }
