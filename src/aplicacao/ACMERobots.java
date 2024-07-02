@@ -327,7 +327,15 @@ public class ACMERobots {
                     for (Robo roboReserva : reservaAtual.getListaRobos()) {
                         if (roboLocacao.equals(roboReserva)) {
                             temRoboRepetido = true;
-                            //System.out.println("Robô repetido encontrado: " + roboReserva);
+                            System.out.println("Robô repetido encontrado: " + roboReserva);
+                            break;
+                        }
+                        if(locacao.getSituacao() == Status.CANCELADA || locacao.getSituacao() == Status.FINALIZADA){
+                            if (roboLocacao.equals(roboReserva)) {
+                                temRoboRepetido = true;
+                                System.out.println("Robô repetido encontrado: " + roboReserva);
+                                break;
+                            }
                             break;
                         }
                     }
