@@ -369,6 +369,8 @@ public class ACMERobots {
 
         // Verifica a situação atual da locação e atualiza conforme a nova situação
         if (locacao.getSituacao() == Status.EXECUTANDO) {
+            System.out.println("Luan gay");
+            System.out.println(situacao);
             if ("CANCELADA".equals(situacao)) {
                 locacao.setSituacao(Status.CANCELADA);
                 System.out.println("Locação cancelada com sucesso.");
@@ -394,12 +396,6 @@ public class ACMERobots {
         System.out.println("Operação não permitida para o estado atual da locação.");
         return false;
     }
-
-
-
-
-
-
 
 
     public Locacao locacaoCerta(int numero) {

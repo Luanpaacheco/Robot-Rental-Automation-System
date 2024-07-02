@@ -5,27 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ui/TelaAlteraSituacao.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/TelaAlteraSituacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ACMERobots.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/Locacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Locacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TelaAlteraSituacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaAlteraSituacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/Locacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dados/Locacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/Aplicacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/Aplicacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaAlteraSituacao$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaAlteraSituacao$2.class" afterDir="false" />
     </list>
-    <list id="a7dcceac-b8af-404a-8e12-2bb212f7b63f" name="Changes by arthu" comment="">
-      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Aplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.java" afterDir="false" />
-    </list>
+    <list id="a7dcceac-b8af-404a-8e12-2bb212f7b63f" name="Changes by arthu" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,31 +31,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/dados/Status.java">
-      <ranges>
-        <range start1="22" end1="29" start2="22" end2="29" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="30" end1="31" start2="30" end2="31" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/aplicacao/ACMERobots.java">
-      <ranges>
-        <range start1="28" end1="28" start2="28" end2="29" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="212" end1="213" start2="213" end2="215" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="353" end1="353" start2="355" end2="413" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="5" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="7" end1="7" start2="10" end2="11" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="12" end1="13" start2="16" end2="29" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="17" end1="17" start2="33" end2="34" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-        <range start1="23" end1="24" start2="40" end2="41" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
-        <range start1="27" end1="27" start2="44" end2="47" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
@@ -80,25 +43,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;322&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/luanp/Documents/PUCRS/POO/TrabalhoFinal/src/ui/cliente&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "322",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/luistrein/IdeaProjects/POO_2024_01/pasta sem título/ACMERobots",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="aplicacao" />
@@ -152,7 +115,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-9b16c6e2" />
       </set>
     </attachedChunks>
   </component>
@@ -178,6 +141,7 @@
       <workItem from="1719698569298" duration="2949000" />
       <workItem from="1719768643185" duration="7088000" />
       <workItem from="1719797138411" duration="7330000" />
+      <workItem from="1719947412122" duration="1195000" />
     </task>
     <servers />
   </component>

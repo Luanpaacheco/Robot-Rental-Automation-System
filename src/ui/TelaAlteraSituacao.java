@@ -31,7 +31,7 @@ public class TelaAlteraSituacao {
         TrocarSituacao.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String situacao = textFieldNumero.getText();
+                String situacao = textFieldSituacao.getText().toUpperCase();
                 int numero1 = Integer.valueOf(textFieldNumero.getText());
                 if(acmeRobots.alterarSituacao(numero1, situacao)) {
                     textArea1.setText(acmeRobots.locacaoCerta(numero1).toString());
