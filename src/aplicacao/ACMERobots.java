@@ -15,6 +15,7 @@ import dados.robo.Robo;
 import dados.Locacao;
 import org.springframework.scheduling.config.TaskNamespaceHandler;
 import service.CarregarDados;
+import service.carregarDados.csv.CarregarDadosCsv;
 
 import java.util.*;
 import java.text.ParseException;
@@ -28,10 +29,9 @@ public class ACMERobots {
     private ArrayList<Locacao> listaLocacoes;
     private Queue<Locacao> reservas;
     private Status status;
-    private CarregarDados carrega = new CarregarDados();
+    private CarregarDadosCsv carrega = new CarregarDadosCsv();
 
-
-    public ACMERobots() {
+    private ACMERobots() {
         this.listaRobos = listaRobos;
         this.clientes = new ArrayList<>();
         this.listaLocacoes = new ArrayList<>();
@@ -98,13 +98,12 @@ public class ACMERobots {
         }
         return listaRobos.add(novoRobo);
     }
-    public static ACMERobots getInstance() {
+    public static synchronized ACMERobots getInstance() {
         if (instance == null) {
             instance = new ACMERobots();
         }
         return instance;
     }
-
 
     public boolean adicionarLocacao(Locacao novaLocacao) {
         for(Locacao l : listaLocacoes) {
@@ -420,9 +419,11 @@ public class ACMERobots {
         }
         return locacao;
     }
-    public void carregaDados(String arquivoRobo, String arquivoCliente){
-        //clientes.addAll(carrega.carregarClientesDados(arquivoCliente));
+    public void carregaDados(String arquivoRobo, String arquivoCliente,String arquivoLocacao){
+        clientes.addAll(carrega.carregarClientesDados(arquivoCliente));
         listaRobos.addAll(carrega.carregarRobosDados(arquivoRobo));
+        carrega.carregarLocacoesDados(arquivoLocacao,getInstance());
+        System.out.println(reservas);
     }
 }
 

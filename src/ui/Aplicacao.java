@@ -4,9 +4,9 @@ import aplicacao.ACMERobots;
 import ui.cliente.TelaIndividual;
 import ui.cliente.TelaEmpresarial;
 import ui.cliente.TelaMenuClientes;
-import ui.locacao.TelaAddRobos;
-import ui.locacao.TelaCriarLocacao;
-import ui.locacao.TelaResultados;
+import ui.locacao.*;
+import ui.menu.TelaMenu;
+import ui.menu.TelaRelatorioGeral;
 import ui.robo.TelaA;
 import ui.robo.TelaD;
 import ui.robo.TelaI;
@@ -15,11 +15,11 @@ import ui.robo.TelaR;
 import javax.swing.*;
 
 public class Aplicacao extends JFrame {
-    ACMERobots acmeRobots = new ACMERobots();
+    ACMERobots acmeRobots = ACMERobots.getInstance();
     private TelaMenuClientes telaMenuClientes = new TelaMenuClientes(this);
     private TelaEmpresarial telaEmpresarial= new TelaEmpresarial(this);
     private TelaMenu telaMenu = new TelaMenu(this);
-    private TelaR tela = new TelaR(this);
+    private TelaR telaMenuRobos = new TelaR(this);
     private TelaD telaD = new TelaD(this);
     private TelaA telaA = new TelaA(this);
     private TelaI telaI = new TelaI(this);
@@ -42,7 +42,7 @@ public class Aplicacao extends JFrame {
                 this.setSize(1000,800);
                 break;
             case 1:
-                this.setContentPane(tela.getPainel());
+                this.setContentPane(telaMenuRobos.getPainel());
                 this.pack();
                 this.setSize(1000,800);
                 break;

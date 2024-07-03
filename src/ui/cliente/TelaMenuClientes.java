@@ -19,6 +19,7 @@ public class TelaMenuClientes {
     private JTextArea textArea1;
     private JLabel Legenda;
     private JButton limpar;
+    private JButton voltarButton;
 
     public TelaMenuClientes(Aplicacao aplicacao) {
         this.aplicacao=aplicacao;
@@ -55,6 +56,12 @@ public class TelaMenuClientes {
             @Override
             public void actionPerformed(ActionEvent e) {
                 textArea1.setText("");
+            }
+        });
+        voltarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                aplicacao.mudaPainel(0);
             }
         });
     }
