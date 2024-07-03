@@ -2,14 +2,17 @@ package ui.cliente;
 
 import aplicacao.ACMERobots;
 import dados.cliente.Cliente;
+import service.ConverteJson;
 import ui.Aplicacao;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Comparator;
+import java.util.List;
 
 public class TelaMenuClientes {
+    ConverteJson conversor = new ConverteJson();
     private ACMERobots acmeRobots = ACMERobots.getInstance();
     private Aplicacao aplicacao;
     private JButton INDIVIDUAL;
@@ -20,6 +23,10 @@ public class TelaMenuClientes {
     private JLabel Legenda;
     private JButton limpar;
     private JButton voltarButton;
+    private JButton carregarDadosButton;
+    private JButton salvarDadosButton;
+    private JTextField salvarClientes;
+    private JTextField textField2;
 
     public TelaMenuClientes(Aplicacao aplicacao) {
         this.aplicacao=aplicacao;
@@ -62,6 +69,17 @@ public class TelaMenuClientes {
             @Override
             public void actionPerformed(ActionEvent e) {
                 aplicacao.mudaPainel(0);
+            }
+        });
+        salvarDadosButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String nomeArquivo = salvarClientes.getText();
+                if(nomeArquivo.isEmpty()){
+                    JOptionPane.showMessageDialog(aplicacao, "Para salvar digie o nome do arquivo!\nSem extenção");
+                }else{
+                    conversor.salvarDados(acmeRobots.getListaClientes(), nomeArquivo);
+                }
             }
         });
     }

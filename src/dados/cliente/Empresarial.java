@@ -1,8 +1,12 @@
 package dados.cliente;
 
 import aplicacao.ACMERobots;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 import dados.Locacao;
 
+@JsonTypeName("empresarial")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Empresarial extends Cliente {
 	ACMERobots acmeRobots = ACMERobots.getInstance();
 

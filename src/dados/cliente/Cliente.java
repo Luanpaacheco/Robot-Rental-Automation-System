@@ -1,6 +1,9 @@
 package dados.cliente;
 
 import aplicacao.ACMERobots;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "tipo")
 
 public abstract class Cliente {
 	private int codigo;

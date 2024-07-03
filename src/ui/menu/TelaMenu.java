@@ -1,7 +1,6 @@
 package ui.menu;
 
 import aplicacao.ACMERobots;
-import service.CarregarDados;
 import service.carregarDados.csv.CarregarDadosCsv;
 import ui.Aplicacao;
 

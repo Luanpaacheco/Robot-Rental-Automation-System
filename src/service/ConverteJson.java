@@ -13,9 +13,9 @@ public class ConverteJson {
     private ACMERobots acmeRobots;
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    public ConverteJson(ACMERobots acmeRobots) {
+    public ConverteJson() {
 
-        this.acmeRobots = acmeRobots;
+        //this.acmeRobots = acmeRobots;
     }
 
     public void converte(Object a) {

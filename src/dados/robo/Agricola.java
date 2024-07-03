@@ -1,9 +1,11 @@
 package dados.robo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonTypeName;
 
 
 @JsonTypeName("agricola")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Agricola extends Robo{
 	private double area;
 	private String uso;
