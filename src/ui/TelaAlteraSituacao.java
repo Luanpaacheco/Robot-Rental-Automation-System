@@ -19,6 +19,7 @@ public class TelaAlteraSituacao {
     private JButton Voltar;
 
     public TelaAlteraSituacao(Aplicacao aplicacao) {
+        app = aplicacao;
 
         //textAreaLocacao.setText(acmeRobots.getListaLocacoes().toString()+"\n"+acmeRobots.getListaReserva().toString());
 
