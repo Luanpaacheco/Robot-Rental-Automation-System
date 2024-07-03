@@ -45,11 +45,9 @@ public class CarregarDados {
         return robos;
     }
     public List<Robo> carregarRobosDados(String nomeArquivo) {
-        Robo robo;
-
         List<Robo> robos = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(nomeArquivo+".csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(nomeArquivo + ".csv"))) {
             String linha;
             boolean primeiraLinha = true; // Para ignorar o cabeçalho, se houver
 
@@ -58,27 +56,56 @@ public class CarregarDados {
                     primeiraLinha = false;
                     continue; // Pula a primeira linha (cabeçalho)
                 }
+
                 String[] dados = linha.split(";");
-                // Extrai os dados do CSV
-                int id = Integer.parseInt(dados[0].trim());
-                String modelo = dados[1].trim();
-                int tipo = Integer.parseInt(dados[2].trim());
-                String nivelSetorArea = dados[3].trim();
-                String uso = dados[4].trim();
-                if(tipo == 1){
-                    robo = new Domestico(id, modelo, Integer.parseInt(nivelSetorArea));
-                } else if(tipo == 2){
-                    robo = new Industrial(id, modelo, nivelSetorArea);
-                } else {
-                    robo = new Agricola(id, modelo, Double.parseDouble(nivelSetorArea),uso);
-                }
-                if (robo != null) {
-                    robos.add(robo);
+
+                try {
+                    // Extrair os dados do CSV
+                    int id = Integer.parseInt(dados[0].trim());
+                    String modelo = dados[1].trim();
+                    int tipo = Integer.parseInt(dados[2].trim());
+
+                    // Inicializar as variáveis opcionais
+                    String nivelSetorArea = dados.length > 3 ? dados[3].trim() : "";
+                    String uso = dados.length > 4 ? dados[4].trim() : "";
+
+                    Robo robo = null;
+
+                    switch (tipo) {
+                        case 1:
+                            if (!nivelSetorArea.isEmpty()) {
+                                robo = new Domestico(id, modelo, Integer.parseInt(nivelSetorArea));
+                            }
+                            break;
+                        case 2:
+                            robo = new Industrial(id, modelo, nivelSetorArea);
+                            break;
+                        case 3:
+                            if (!nivelSetorArea.isEmpty() && !uso.isEmpty()) {
+                                robo = new Agricola(id, modelo, Double.parseDouble(nivelSetorArea), uso);
+                            }
+                            break;
+                        default:
+                            System.err.println("Erro: tipo de robô inválido na linha " + linha);
+                            continue; // Pular linhas com tipos de robô inválidos
+                    }
+
+                    if (robo != null) {
+                        robos.add(robo);
+                    } else {
+                        System.err.println("Erro: dados insuficientes para criar o robô na linha " + linha);
+                    }
+
+                } catch (NumberFormatException e) {
+                    System.err.println("Erro ao converter número na linha " + linha + ": " + e.getMessage());
                 }
             }
-            System.out.println("Dados carregados com sucesso do arquivo '" + nomeArquivo + "'");
+            System.out.println("Dados carregados com sucesso do arquivo '" + nomeArquivo + ".csv'");
+        } catch (FileNotFoundException e) {
+            System.err.println("Erro: arquivo '" + nomeArquivo + ".csv' não encontrado");
+            e.printStackTrace();
         } catch (IOException e) {
-            System.err.println("Erro ao carregar os dados do arquivo '" + nomeArquivo + "': " + e.getMessage());
+            System.err.println("Erro ao ler o arquivo '" + nomeArquivo + ".csv': " + e.getMessage());
             e.printStackTrace();
         }
 

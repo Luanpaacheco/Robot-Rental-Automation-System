@@ -14,6 +14,7 @@ import dados.cliente.Individual;
 import dados.robo.Robo;
 import dados.Locacao;
 import org.springframework.scheduling.config.TaskNamespaceHandler;
+import service.CarregarDados;
 
 import java.util.*;
 import java.text.ParseException;
@@ -27,6 +28,7 @@ public class ACMERobots {
     private ArrayList<Locacao> listaLocacoes;
     private Queue<Locacao> reservas;
     private Status status;
+    private CarregarDados carrega = new CarregarDados();
 
 
     public ACMERobots() {
@@ -413,8 +415,9 @@ public class ACMERobots {
         }
         return locacao;
     }
-
-
-
+    public void carregaDados(String arquivoRobo, String arquivoCliente){
+        //clientes.addAll(carrega.carregarClientesDados(arquivoCliente));
+        listaRobos.addAll(carrega.carregarRobosDados(arquivoRobo));
+    }
 }
 

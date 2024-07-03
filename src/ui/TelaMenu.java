@@ -27,6 +27,7 @@ public class TelaMenu {
     private JButton processarLocacoes;
     private JButton consultarTodsLocacoes;
     private JButton mudarSituacaoLocacao;
+    private JButton iniciarDadosButton;
 
 
     public TelaMenu(Aplicacao app){
@@ -98,6 +99,13 @@ public class TelaMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
                 app.mudaPainel(11);
+            }
+        });
+        iniciarDadosButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                acmeRobots.carregaDados("EXEMPLO-ROBOS", "a");
+                System.out.println(acmeRobots.getListaRobos().toString());
             }
         });
     }
