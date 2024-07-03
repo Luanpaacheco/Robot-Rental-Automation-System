@@ -44,9 +44,6 @@ public abstract class Robo {
 
 	@Override
 	public String toString() {
-		return
-				"Id = " + id +
-						" | Modelo = " + modelo +
-						" | ";
+		return  "\n" + "Modelo: " + modelo + ", Id: " + id + ", ";
 	}
 }

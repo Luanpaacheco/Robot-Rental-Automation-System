@@ -41,7 +41,7 @@ public class Agricola extends Robo{
 
 	@Override
 	public String toString() {
-		return "\n" + super.toString() + "Uso = " + this.uso + " | Area = " + this.area + " m2";
+		return super.toString() + "Uso: " + uso + ", Area: " + area + " m².";
 	}
 	private void determinaValorDiario() {
 		setValorDiario(area*10);

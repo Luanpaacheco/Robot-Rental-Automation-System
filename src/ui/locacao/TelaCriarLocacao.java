@@ -17,7 +17,7 @@ public class TelaCriarLocacao extends JDialog {
     private JPanel painel;
     private JTextField numeroField;
     private JTextArea textAreaClientes;
-    private JTextField situacaoField;
+
     private JTextField dataInicioField;
     private JTextField dataFimField;
     private JTextField clienteField;
@@ -45,7 +45,7 @@ public class TelaCriarLocacao extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 numeroField.setText("");
-                situacaoField.setText("");
+
                 dataInicioField.setText("");
                 dataFimField.setText("");
                 clienteField.setText("");
@@ -73,7 +73,7 @@ public class TelaCriarLocacao extends JDialog {
 
                     if( acmeRobots.adicionarReserva(novaLocacao)) {
                         numeroField.setText("");
-                        situacaoField.setText("");
+
                         dataInicioField.setText("");
                         dataFimField.setText("");
                         clienteField.setText("");
@@ -81,7 +81,7 @@ public class TelaCriarLocacao extends JDialog {
                     } else {
                         JOptionPane.showMessageDialog(aplicacao, "Essa locacao já foi cadastrada.");
                         numeroField.setText("");
-                        situacaoField.setText("");
+
                         dataInicioField.setText("");
                         dataFimField.setText("");
                         clienteField.setText("");

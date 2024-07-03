@@ -68,7 +68,7 @@ public class Locacao {
 				"\n" + "Situacao: " + situacao + ";" +
 				"\n" + "Data Inicio: " + dataInicio + ";" +
 				"\n" + "Data Fim: " + dataFim + " dias;" +
-				"\n" + "Robos alugados: " + listaDeRobos + ";";
+				"\n" + "Robos selecionados: " + listaDeRobos + ";";
 	}
 
 
@@ -78,7 +78,7 @@ public class Locacao {
 				"\n" + "Situacao: " + situacao + ";" +
 				"\n" + "Data Inicio: " + dataInicio + ";" +
 				"\n" + "Data Fim: " + dataFim + " dias;" +
-				"\n" + "Robos alugados: " + listaDeRobos + ";";
+				"\n" + "Robos selecionados: " + listaDeRobos + ";";
 	}
 
 

@@ -6,25 +6,46 @@
   <component name="ChangeListManager">
     <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EXEMPLO-ROBOS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/EXEMPLO-ROBOS.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/CarregarDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/CarregarDados.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TelaAlteraSituacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaAlteraSituacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EXEMPLO-ROBOS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/Locacao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/cliente/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/cliente/Empresarial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/cliente/Individual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Agricola.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Domestico.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Industrial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Robo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/CarregarDados.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/converteJson.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/Aplicacao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu.class" beforeDir="false" />
     </list>
-    <list id="a7dcceac-b8af-404a-8e12-2bb212f7b63f" name="Changes by arthu" comment="" />
+    <list id="a7dcceac-b8af-404a-8e12-2bb212f7b63f" name="Changes by arthu" comment="">
+      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/Locacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Locacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/robo/Agricola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Agricola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/robo/Domestico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Domestico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/robo/Industrial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Industrial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/robo/Robo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Robo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,25 +75,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;322&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/luistrein/IdeaProjects/POO_2024_01/pasta sem título/ACMERobots&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "322",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/luistrein/IdeaProjects/POO_2024_01/pasta sem título/ACMERobots",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="aplicacao" />

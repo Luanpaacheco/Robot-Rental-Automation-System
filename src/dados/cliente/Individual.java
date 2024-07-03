@@ -36,6 +36,6 @@ public class Individual extends Cliente{
 	}
 	@Override
 	public String toString() {
-		return super.toString()+ ", cpf: "+cpf+" ]"+"\n";
+		return super.toString() + "CPF: " + cpf + ".";
 	}
 }

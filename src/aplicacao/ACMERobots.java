@@ -366,44 +366,39 @@ public class ACMERobots {
     public boolean alterarSituacao(int numero, String situacao) {
         Locacao locacao = consultaLocacaoPorNuumero(numero);
 
-        // Se locacao for null, tenta consultar por reserva
-        if (locacao == null) {
+        if(locacao == null) {
             locacao = consultaLocacaoPorNuumeroReserva(numero);
         }
 
-        // Se ainda assim locacao for null, retorna false
-        if (locacao == null) {
-            System.out.println("Locação não encontrada.");
+        if(locacao == null) {
+            //System.out.println("Locação não encontrada.");
             return false;
         }
 
-        // Verifica a situação atual da locação e atualiza conforme a nova situação
-        if (locacao.getSituacao() == Status.EXECUTANDO) {
-            System.out.println("Luan gay");
+        if(locacao.getSituacao() == Status.EXECUTANDO) {
             System.out.println(situacao);
-            if ("CANCELADA".equals(situacao)) {
+            if("CANCELADA".equals(situacao)) {
                 locacao.setSituacao(Status.CANCELADA);
                 System.out.println("Locação cancelada com sucesso.");
                 return true;
-            } else if ("FINALIZADA".equals(situacao)) {
+            } else if("FINALIZADA".equals(situacao)) {
                 locacao.setSituacao(Status.FINALIZADA);
                 System.out.println("Locação finalizada com sucesso.");
                 return true;
             }
-        } else if (locacao.getSituacao() == Status.CADASTRADA) {
-            if ("CANCELADA".equals(situacao)) {
+        } else if(locacao.getSituacao() == Status.CADASTRADA) {
+            if("CANCELADA".equals(situacao)) {
                 locacao.setSituacao(Status.CANCELADA);
                 System.out.println("Locação cancelada com sucesso.");
                 return true;
-            } else if ("FINALIZADA".equals(situacao)) {
+            } else if("FINALIZADA".equals(situacao)) {
                 locacao.setSituacao(Status.FINALIZADA);
                 System.out.println("Locação finalizada com sucesso.");
                 return true;
             }
         }
 
-        // Se nenhum dos casos anteriores foi atendido, imprime mensagem e retorna false
-        System.out.println("Operação não permitida para o estado atual da locação.");
+        //System.out.println("Operação não permitida para o estado atual da locação.");
         return false;
     }
 

@@ -22,8 +22,6 @@ public abstract class Cliente {
 	public abstract double calculaDesconto();
 	@Override
 	public String toString() {
-		return "Cliente [" +
-				" nome: " + nome+
-				", codigo: " + codigo;
+		return "\n" + nome + ", Codigo: " + codigo + ", ";
 	}
 }
