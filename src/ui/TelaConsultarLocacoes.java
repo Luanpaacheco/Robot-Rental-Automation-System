@@ -19,11 +19,14 @@ public class TelaConsultarLocacoes {
 //        for (Locacao l : acmeRobots.getListaLocacoes()){
 //            String texto +=l.toString2();
 //        }
+        textAreaLocacao.setText("");
+
         for (Locacao l : acmeRobots.getListaLocacoes()) {
-            textAreaLocacao.append(l.toString2() + acmeRobots.calculoValorFinal(l.getNumero()) + "\n\n");
+            double valor=acmeRobots.calculoValorFinal(l.getNumero());
+            textAreaLocacao.append(l.toString2()+"\n" + acmeRobots.calculoValorFinal(l.getNumero()) + "\n\n");
         }
         for (Locacao l : acmeRobots.getListaReserva()) {
-            textAreaLocacao.append(l.toString2() + acmeRobots.calculoValorFinal(l.getNumero()) +  "\n\n");
+            textAreaLocacao.append(l.toString2()+"\n" + acmeRobots.calculoValorFinal(l.getNumero()) +  "\n\n");
         }
 
         //textAreaLocacao.append(acmeRobots.getListaLocacoes().stream().map(a->a.toString2()).toString());

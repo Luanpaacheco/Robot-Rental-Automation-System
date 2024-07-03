@@ -23,6 +23,7 @@ public class TelaA {
     private JPanel painel1;
     private JLabel imgRoboField;
     private JButton limparButton;
+    private JButton voltar;
 
 
     public TelaA(Aplicacao app) {
@@ -72,6 +73,12 @@ public class TelaA {
                 usoField.setText("");
                 areaField.setText("");
 
+            }
+        });
+        voltar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                app.mudaPainel(1);
             }
         });
     }

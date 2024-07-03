@@ -276,6 +276,16 @@ public class ACMERobots {
                 locacao = loc;
             }
         }
+        if(locacao==null){
+            for(Locacao loc : getListaLocacoes()) {
+                if(loc.getNumero() == numero) {
+                    locacao = loc;
+                }
+            }
+        }
+        if (locacao==null){
+            return 0.09080800;
+        }
         dias = locacao.getDataFim();
         porcentagemDesconto = locacao.getCliente().calculaDesconto();
         for(Robo robo : locacao.getListaRobos()) {

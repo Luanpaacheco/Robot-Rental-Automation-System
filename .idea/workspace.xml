@@ -6,45 +6,36 @@
   <component name="ChangeListManager">
     <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaAlteraSituacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaAlteraSituacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/Locacao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/Status.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/cliente/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/cliente/Empresarial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/cliente/Individual.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Agricola.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Domestico.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Industrial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Robo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/CarregarDados.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/converteJson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/Aplicacao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/robo/TelaA.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaA.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/robo/TelaA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/robo/TelaD.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaD.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/robo/TelaD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/robo/TelaI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/robo/TelaI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaConsultarLocacoes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaConsultarLocacoes$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaConsultarLocacoes$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaConsultarLocacoes$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/TelaConsultarLocacoes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/TelaConsultarLocacoes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaA$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaA$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaA$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaA$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaA$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaA$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaA$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaA$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaA.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaA.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaD$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaD$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaD$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaD$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaD$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaD$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaD$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaD$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaI$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaI.class" afterDir="false" />
     </list>
     <list id="a7dcceac-b8af-404a-8e12-2bb212f7b63f" name="Changes by arthu" comment="">
-      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/Locacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Locacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Individual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Agricola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Agricola.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Domestico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Domestico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Industrial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Industrial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Robo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Robo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +53,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/ui/TelaConsultarLocacoes.java">
+      <ranges>
+        <range start1="21" end1="21" start2="21" end2="23" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
+        <range start1="22" end1="23" start2="24" end2="26" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="25" end1="26" start2="28" end2="29" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+      </ranges>
+    </file>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
@@ -91,6 +91,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

@@ -22,6 +22,7 @@ public class TelaD {
     private JTextField modeloField;
     private JButton menuRobosButton;
     private JButton limparButton;
+    private JButton voltar;
 
 
     public TelaD(Aplicacao app) {
@@ -72,6 +73,12 @@ public class TelaD {
                 idField.setText("");
                 modeloField.setText("");
                 nivelField.setText("");
+            }
+        });
+        voltar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                app.mudaPainel(1);
             }
         });
     }

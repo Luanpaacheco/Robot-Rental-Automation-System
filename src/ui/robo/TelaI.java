@@ -21,6 +21,7 @@ public class TelaI {
     private JTextField modeloField;
     private JButton menuRobosButton;
     private JButton limparButton;
+    private JButton voltar;
 
 
     public TelaI(Aplicacao app) {
@@ -67,6 +68,12 @@ public class TelaI {
                 idField.setText("");
                 modeloField.setText("");
                 setorField.setText("");
+            }
+        });
+        voltar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                app.mudaPainel(1);
             }
         });
     }
