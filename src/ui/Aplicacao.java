@@ -23,9 +23,9 @@ public class Aplicacao extends JFrame {
     private TelaD telaD = new TelaD(this);
     private TelaA telaA = new TelaA(this);
     private TelaI telaI = new TelaI(this);
-    //private TelaAddRobos telaAddRobos = new TelaAddRobos(this, acmeRobots);
+    private TelaAddRobos telaAddRobos = new TelaAddRobos(this);
     private TelaCriarLocacao telaCriarLocacao = new TelaCriarLocacao(this);
-    //private TelaRelatorioGeral telaRelatorioGeral = new TelaRelatorioGeral(this);
+    private TelaRelatorioGeral telaRelatorioGeral = new TelaRelatorioGeral(this);
     public Aplicacao(){
         super();
         JPanel painel = telaMenu.getPainel();
