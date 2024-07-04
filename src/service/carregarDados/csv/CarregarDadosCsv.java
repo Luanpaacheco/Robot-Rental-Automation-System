@@ -199,7 +199,7 @@ public class CarregarDadosCsv {
                                 acmeRobots.adicionarRoboNaReserva(robo);
                             }
                             locacoes.add(locacao);
-                            acmeRobots.adicionarReserva(locacao);
+                            verifica.adicionarLocacoesUnicas(locacoes);
 
                         } else {
                             System.out.println("Locação com número " + numero + " já existe e não será adicionada novamente.");
