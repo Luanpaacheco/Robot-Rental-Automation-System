@@ -11,6 +11,7 @@ import dados.robo.Agricola;
 import dados.robo.Domestico;
 import dados.robo.Industrial;
 import dados.robo.Robo;
+import service.duplicacao.VerificaDuplicacao;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -24,6 +25,7 @@ import java.util.List;
 
 public class CarregarDadosCsv {
     //ACMERobots acmeRobots = ACMERobots.getInstance();
+    private VerificaDuplicacao verifica = new VerificaDuplicacao();
 
 
 
@@ -93,7 +95,7 @@ public class CarregarDadosCsv {
             e.printStackTrace();
         }
 
-        return adicionarRobosUnicos(robos);
+        return verifica.adicionarRobosUnicos(robos);
     }
     public List<Cliente> carregarClientesDados(String nomeArquivo) {
         Cliente cliente = null;
@@ -143,7 +145,7 @@ public class CarregarDadosCsv {
             System.err.println("Erro ao converter número no arquivo '" + nomeArquivo + "': " + e.getMessage());
             e.printStackTrace();
         }
-        return adicionarClientesUnicos(clientes,ACMERobots.getInstance());
+        return  verifica.adicionarClientesUnicos(clientes);
     }
 
     public void carregarLocacoesDados(String nomeArquivo, ACMERobots acmeRobots) {
@@ -221,55 +223,6 @@ public class CarregarDadosCsv {
         }
 
     }
-    private void adicionarLocacoesUnicas(Queue<Locacao> novasLocacoes,ACMERobots acmeRobots) {
-            Queue<Locacao> locacoesParaAdicionar = new LinkedList<>();
-        Set<Integer> numerosExistentes = new HashSet<>();
-        for (Locacao locacao : acmeRobots.getListaReserva()) {
-            numerosExistentes.add(locacao.getNumero());
-        }
 
-        for (Locacao novaLocacao : novasLocacoes) {
-            if (!numerosExistentes.contains(novaLocacao.getNumero())) {
-                locacoesParaAdicionar.add(novaLocacao);
-                System.out.println("Unicos" + novaLocacao.toString());
-
-                for (Robo robo : novaLocacao.getListaDeRobos()) {
-                    acmeRobots.adicionarRoboNaReserva(robo);
-                }
-                acmeRobots.adicionarReserva(novaLocacao);
-            }
-        }
-    }
-    private List<Cliente> adicionarClientesUnicos(List<Cliente> novosClientes,ACMERobots acmeRobots) {
-        List<Cliente> clientesParaAdicionar = new ArrayList<>();
-        Set<Integer> codigosExistentes = new HashSet<>();
-        for (Cliente cliente : acmeRobots.getListaClientes()) {
-            codigosExistentes.add(cliente.getCodigo());
-        }
-
-        for (Cliente novoCliente : novosClientes) {
-            if (!codigosExistentes.contains(novoCliente.getCodigo())) {
-                clientesParaAdicionar.add(novoCliente);
-                System.out.println("Unicos" + novoCliente.toString());
-            }
-        }
-        return clientesParaAdicionar;
-    }
-    private List<Robo> adicionarRobosUnicos(List<Robo> novosRobos) {
-        ACMERobots acmeRobots = ACMERobots.getInstance();
-        List<Robo> robosParaAdicionar = new ArrayList<>();
-        Set<Integer> idsExistentes = new HashSet<>();
-        for (Robo robo : acmeRobots.getListaRobos()) {
-            idsExistentes.add(robo.getId());
-        }
-
-        for (Robo novoRobo : novosRobos) {
-            if (!idsExistentes.contains(novoRobo.getId())) {
-                robosParaAdicionar.add(novoRobo);
-                System.out.println("Unicos" + novoRobo.toString());
-            }
-        }
-        return robosParaAdicionar;
-    }
 
 }

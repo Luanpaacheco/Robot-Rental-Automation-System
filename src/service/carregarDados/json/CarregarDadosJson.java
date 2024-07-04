@@ -11,21 +11,18 @@ import dados.cliente.Cliente;
 import dados.cliente.Empresarial;
 import dados.cliente.Individual;
 import dados.robo.*;
+import service.duplicacao.VerificaDuplicacao;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class CarregarDadosJson {
     ACMERobots acmeRobots = ACMERobots.getInstance();
+    private VerificaDuplicacao verifica = new VerificaDuplicacao();
 
     public List<Robo> carregarDadosRobosJson(String nomeArquivo) {
         ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.enable(SerializationFeature.INDENT_OUTPUT); // Opção para formatar o JSON de saída para facilitar a leitura (opcional)
-
-        // Configuração para lidar com polimorfismo de tipos usando anotações Jackson
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
         SimpleModule module = new SimpleModule();
         module.addAbstractTypeMapping(Robo.class, Industrial.class);
         module.addAbstractTypeMapping(Robo.class, Domestico.class);
@@ -35,7 +32,6 @@ public class CarregarDadosJson {
         List<Robo> robos = null;
 
         try {
-            // Ler o arquivo JSON e converter para uma lista de objetos Robo
             File arquivo = new File(nomeArquivo+".json");
             CollectionType tipoColecao = objectMapper.getTypeFactory().constructCollectionType(List.class, Robo.class);
             robos = objectMapper.readValue(arquivo, tipoColecao);
@@ -44,14 +40,13 @@ public class CarregarDadosJson {
             System.err.println("Erro ao carregar os dados do arquivo '" + nomeArquivo + "': " + e.getMessage());
             e.printStackTrace();
         }
-        return adicionarRobosUnicos(robos);
+        return verifica.adicionarRobosUnicos(robos);
     }
 
     public List<Cliente> carregarDadosClientesJson(String nomeArquivo) {
         ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.enable(SerializationFeature.INDENT_OUTPUT); // Opção para formatar o JSON de saída para facilitar a leitura (opcional)
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 
-        // Configuração para lidar com polimorfismo de tipos usando anotações Jackson
         SimpleModule module = new SimpleModule();
         module.addAbstractTypeMapping(Cliente.class, Empresarial.class);
         module.addAbstractTypeMapping(Cliente.class, Individual.class);
@@ -60,7 +55,6 @@ public class CarregarDadosJson {
         List<Cliente> clientes = null;
 
         try {
-            // Ler o arquivo JSON e converter para uma lista de objetos Robo
             File arquivo = new File(nomeArquivo+".json");
             CollectionType tipoColecao = objectMapper.getTypeFactory().constructCollectionType(List.class, Robo.class);
             clientes = objectMapper.readValue(arquivo, tipoColecao);
@@ -69,39 +63,9 @@ public class CarregarDadosJson {
             System.err.println("Erro ao carregar os dados do arquivo '" + nomeArquivo + "': " + e.getMessage());
             e.printStackTrace();
         }
-        return adicionarClientesUnicos(clientes);
+        return verifica.adicionarClientesUnicos(clientes);
     }
-    private List<Robo> adicionarRobosUnicos(List<Robo> novosRobos) {
-        List<Robo> robosParaAdicionar = new ArrayList<>();
-        Set<Integer> idsExistentes = new HashSet<>();
-        for (Robo robo : acmeRobots.getListaRobos()) {
-            idsExistentes.add(robo.getId());
-        }
-
-        for (Robo novoRobo : novosRobos) {
-            if (!idsExistentes.contains(novoRobo.getId())) {
-                robosParaAdicionar.add(novoRobo);
-                System.out.println("Unicos" + novoRobo.toString());
-            }
-        }
-        return robosParaAdicionar;
-    }
-    private List<Cliente> adicionarClientesUnicos(List<Cliente> novosClientes) {
-        List<Cliente> clientesParaAdicionar = new ArrayList<>();
-        Set<Integer> codigosExistentes = new HashSet<>();
-        for (Cliente cliente : acmeRobots.getListaClientes()) {
-            codigosExistentes.add(cliente.getCodigo());
-        }
-
-        for (Cliente novoCliente : novosClientes) {
-            if (!codigosExistentes.contains(novoCliente.getCodigo())) {
-                clientesParaAdicionar.add(novoCliente);
-                System.out.println("Unicos" + novoCliente.toString());
-            }
-        }
-        return clientesParaAdicionar;
-    }
-    public List<Locacao> carregarDadosLocacoesJson(String nomeArquivo) {
+    public Queue<Locacao> carregarDadosLocacoesJson(String nomeArquivo) {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 
@@ -110,7 +74,7 @@ public class CarregarDadosJson {
         module.addAbstractTypeMapping(Status.class, Status.class);
         objectMapper.registerModule(module);
 
-        List<Locacao> locacoes = null;
+        Queue<Locacao> locacoes = null;
 
         try {
             File arquivo = new File(nomeArquivo + ".json");
@@ -122,7 +86,7 @@ public class CarregarDadosJson {
             e.printStackTrace();
         }
 
-        return adicionarLocacoesUnicas(locacoes);
+        return verifica.adicionarLocacoesUnicas(locacoes);
     }
     private List<Locacao> adicionarLocacoesUnicas(List<Locacao> novasLocacoes) {
         List<Locacao> locacoesParaAdicionar = new ArrayList<>();
