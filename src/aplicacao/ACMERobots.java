@@ -1,5 +1,6 @@
 package aplicacao;
 
+import ch.qos.logback.core.joran.action.NOPAction;
 import dados.Status;
 import dados.cliente.Cliente;
 import dados.cliente.Empresarial;
@@ -62,8 +63,11 @@ public class ACMERobots {
 
     public boolean adicionarReserva(Locacao novaLocacao) {
         for(Locacao l : listaLocacoes) {
-            if(novaLocacao.getNumero() == l.getNumero()) {
-                return false;
+            if(consultaLocacaoPorNuumero(novaLocacao.getNumero()) == null){
+                System.out.println("AAAAAA " + novaLocacao.toString()  );
+                if(novaLocacao.getNumero() == l.getNumero()) {
+                    return false;
+                }
             }
         }
         return reservas.add(novaLocacao);

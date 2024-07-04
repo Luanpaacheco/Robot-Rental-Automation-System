@@ -43,7 +43,7 @@ public class VerificaDuplicacao {
         }
         return clientesParaAdicionar;
     }
-    public void adicionarLocacoesUnicas(Queue<Locacao> novasLocacoes,ACMERobots acmeRobots) {
+    public boolean adicionarLocacaoUnica(Locacao novaLocacao, ACMERobots acmeRobots) {
         Set<Integer> numerosExistentes = new HashSet<>();
 
         // Coletar os números das locações já existentes
@@ -51,32 +51,33 @@ public class VerificaDuplicacao {
             numerosExistentes.add(locacao.getNumero());
         }
 
-        // Verificar e adicionar novas locações
-        for (Locacao novaLocacao : novasLocacoes) {
-            if (!numerosExistentes.contains(novaLocacao.getNumero())) {
-                // Verificar se os robôs já estão associados a outras locações
-                Set<Integer> idsRobosJaAssociados = new HashSet<>();
-                boolean robosDisponiveis = true;
+        // Verificar se a locação já existe
+        if (!numerosExistentes.contains(novaLocacao.getNumero())) {
+            // Verificar se os robôs já estão associados a outras locações
+            Set<Integer> idsRobosJaAssociados = new HashSet<>();
+            boolean robosDisponiveis = true;
 
-                for (Robo robo : novaLocacao.getListaDeRobos()) {
-                    if (!idsRobosJaAssociados.add(robo.getId())) {
-                        robosDisponiveis = false;
-                        break;
-                    }
+            for (Robo robo : novaLocacao.getListaDeRobos()) {
+                if (!idsRobosJaAssociados.add(robo.getId())) {
+                    robosDisponiveis = false;
+                    break;
                 }
-
-                if (robosDisponiveis) {
-                    for (Robo robo : novaLocacao.getListaDeRobos()) {
-                        acmeRobots.adicionarRoboNaReserva(robo);
-                    }
-                    acmeRobots.adicionarReserva(novaLocacao);
-                    System.out.println("Locação única adicionada: " + novaLocacao.toString());
-                } else {
-                    System.out.println("Um ou mais robôs já estão associados a outras locações. Locação não adicionada: " + novaLocacao.getNumero());
-                }
-            } else {
-                System.out.println("Locação duplicada encontrada e não será adicionada: " + novaLocacao.getNumero());
             }
+
+            if (robosDisponiveis) {
+                for (Robo robo : novaLocacao.getListaDeRobos()) {
+                    acmeRobots.adicionarRoboNaReserva(robo);
+                }
+                acmeRobots.adicionarReserva(novaLocacao);
+                System.out.println("Locação única adicionada: " + novaLocacao.toString());
+                return true;
+            } else {
+                System.out.println("Um ou mais robôs já estão associados a outras locações. Locação não adicionada: " + novaLocacao.getNumero());
+            }
+        } else {
+            System.out.println("Locação duplicada encontrada e não será adicionada: " + novaLocacao.getNumero());
         }
+
+        return false;
     }
 }

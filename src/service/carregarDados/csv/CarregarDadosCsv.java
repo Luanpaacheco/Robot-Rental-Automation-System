@@ -166,7 +166,7 @@ public class CarregarDadosCsv {
                     // Verificar se a locação já existe
                     boolean locacaoExiste = false;
                     for (Locacao locacaoExistente : acmeRobots.getListaLocacoes()) {
-                        if (locacaoExistente.getNumero() != numero) {
+                        if (locacaoExistente.getNumero() == numero) {
                             locacaoExiste = true;
                             break;
                         }
@@ -218,5 +218,7 @@ public class CarregarDadosCsv {
             e.printStackTrace();
         }
     }
+
+
 }
 

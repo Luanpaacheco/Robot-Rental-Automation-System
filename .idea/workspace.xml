@@ -6,18 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EXEMPLO-LOCACOES.CSV" beforeDir="false" afterPath="$PROJECT_DIR$/EXEMPLO-LOCACOES.CSV" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/carregarDados/csv/CarregarDadosCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/carregarDados/csv/CarregarDadosCsv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/carregarDados/json/CarregarDadosJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/carregarDados/json/CarregarDadosJson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/duplicacao/VerificaDuplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/duplicacao/VerificaDuplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/carregarDados/csv/CarregarDadosCsv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/carregarDados/csv/CarregarDadosCsv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/carregarDados/json/carregarDadosJson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/carregarDados/json/carregarDadosJson.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/duplicacao/VerificaDuplicacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/duplicacao/VerificaDuplicacao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,28 +41,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "200",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "247",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/arthu/Desktop/trabalho poo/ACMERobots",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;200&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;247&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/arthu/Desktop/trabalho poo/ACMERobots&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="aplicacao" />
@@ -124,7 +117,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-20.0.2-azul-20.0.2-4caba194b151-eb49e076" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-9b16c6e2" />
       </set>
     </attachedChunks>
   </component>
@@ -155,6 +148,7 @@
       <workItem from="1719995586353" duration="17408000" />
       <workItem from="1720083417859" duration="3262000" />
       <workItem from="1720116262779" duration="698000" />
+      <workItem from="1720130642627" duration="1089000" />
     </task>
     <servers />
   </component>
