@@ -2,7 +2,7 @@ package ui.cliente;
 
 import aplicacao.ACMERobots;
 import dados.cliente.Cliente;
-import service.salvar.ConverteJson;
+import service.salvar.SalvarJson;
 import ui.Aplicacao;
 
 import javax.swing.*;
@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 import java.util.Comparator;
 
 public class TelaMenuClientes {
-    ConverteJson conversor = new ConverteJson();
+    SalvarJson conversor = new SalvarJson();
     private ACMERobots acmeRobots = ACMERobots.getInstance();
     private Aplicacao aplicacao;
     private JButton INDIVIDUAL;

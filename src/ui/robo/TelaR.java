@@ -2,7 +2,7 @@ package ui.robo;
 
 import aplicacao.ACMERobots;
 import dados.robo.Robo;
-import service.salvar.ConverteJson;
+import service.salvar.SalvarJson;
 import service.carregarDados.json.CarregarDadosJson;
 import ui.Aplicacao;
 
@@ -17,7 +17,7 @@ import java.util.List;
 public class TelaR {
 
     private CarregarDadosJson carregarJson;
-    private ConverteJson conversor;
+    private SalvarJson conversor;
     private Aplicacao aplicacao;
     private ACMERobots acmeRobots = ACMERobots.getInstance();
     private List<Robo> listaRobos;
@@ -39,7 +39,7 @@ public class TelaR {
     public TelaR(Aplicacao app) {
         aplicacao = app;
         listaRobos = acmeRobots.getListaRobos();
-        conversor =  new ConverteJson();//acmeRobots
+        conversor =  new SalvarJson();//acmeRobots
         carregarJson = new CarregarDadosJson();
 
 

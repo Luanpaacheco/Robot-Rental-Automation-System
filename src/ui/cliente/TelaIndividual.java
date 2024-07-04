@@ -43,7 +43,7 @@ public class TelaIndividual {
        voltar.addActionListener(new ActionListener() {
            @Override
            public void actionPerformed(ActionEvent e) {
-               aplicacao.mudaPainel(0);
+               aplicacao.mudaPainel(5);
            }
        });
    }

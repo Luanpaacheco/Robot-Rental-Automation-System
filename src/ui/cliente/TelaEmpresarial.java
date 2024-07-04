@@ -54,7 +54,7 @@ public class TelaEmpresarial {
                 labelNome.setText("");
                 labelAno.setText("");
                 labelCodigo.setText("");
-                aplicacao.mudaPainel(0);
+                aplicacao.mudaPainel(5);
             }
         });
         fecharButton.addActionListener(new ActionListener() {

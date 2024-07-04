@@ -4,6 +4,7 @@ import aplicacao.ACMERobots;
 import dados.cliente.*;
 import dados.Locacao;
 import dados.Status;
+import service.salvar.SalvarCsv;
 import ui.Aplicacao;
 
 import javax.swing.*;
@@ -11,6 +12,7 @@ import java.awt.event.*;
 import java.util.Date;
 
 public class TelaCriarLocacao extends JDialog {
+    SalvarCsv salvar = new SalvarCsv();
     private ACMERobots acmeRobots = ACMERobots.getInstance();
     Aplicacao aplicacao;
     private JPanel contentPane;
@@ -25,12 +27,14 @@ public class TelaCriarLocacao extends JDialog {
     private JButton continuarButton;
     private JButton limparButton;
     private JButton voltar;
+    private JButton salvarButton;
+    private JTextField salvarField;
 
 
     public TelaCriarLocacao(Aplicacao aplicacao) {
         this.aplicacao = aplicacao;
 
-        acmeRobots.criarRobosEClientes();
+        //acmeRobots.criarRobosEClientes();
 
         textAreaClientes.setText(acmeRobots.getListaClientes().toString());
 
@@ -100,12 +104,13 @@ public class TelaCriarLocacao extends JDialog {
                 aplicacao.mudaPainel(0);
             }
         });
+        salvarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                salvar.salvarLocacaoDados(salvarField.getText(),acmeRobots.getListaReserva());
+            }
+        });
     }
-
-
-
-
-
     public JPanel getPainel() {
         return painel;
     }

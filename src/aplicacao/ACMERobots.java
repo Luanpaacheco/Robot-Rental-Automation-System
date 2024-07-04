@@ -37,59 +37,6 @@ public class ACMERobots {
         this.reservas = new LinkedList<>();
     }
 
-    public void criarRobosEClientes() {
-//        Agricola robo1 = new Agricola(209534, "super", 2.7, "fertilizante");
-//        Industrial robo2 = new Industrial(506257, "prime", "automotivo");
-//        Domestico robo3 = new Domestico(764905, "special", 2);
-//        Agricola robo4 = new Agricola(254375, "epic", 3.8, "colheita");
-//        Industrial robo5 = new Industrial(538952, "senior", "textil");
-//        Domestico robo6 = new Domestico(738581, "house", 1);
-//        Individual cliente1 = new Individual(23200003, "Arthur", "67485408095");
-//        Empresarial cliente2 = new Empresarial(23104235, "Luan", 2012);
-//        Empresarial cliente3 = new Empresarial(23280307, "Luis", 2017);
-//        Individual cliente4 = new Individual(27653092, "Pedro", "72097426486");
-//        Individual cliente5 = new Individual(20905235, "Leonardo", "74735867285");
-//        Empresarial cliente6 = new Empresarial(27658629, "Olivia", 2001);
-//        listaRobos.add(robo1);
-//        listaRobos.add(robo2);
-//        listaRobos.add(robo3);
-//        listaRobos.add(robo4);
-//        listaRobos.add(robo5);
-//        listaRobos.add(robo6);
-//        clientes.add(cliente1);
-//        clientes.add(cliente2);
-//        clientes.add(cliente3);
-//        clientes.add(cliente4);
-//        clientes.add(cliente5);
-//        clientes.add(cliente6);
-//        Locacao locacao1 = new Locacao(10, Status.CADASTRADA, dataConvertida("15/04/2004"), 7, cliente1);
-//        locacao1.adicionaRobos(robo1);
-//        locacao1.adicionaRobos(robo2);
-//        reservas.add(locacao1);
-//        Locacao locacao2 = new Locacao(11, Status.CADASTRADA, dataConvertida("16/04/2004"), 7, cliente2);
-//        locacao2.adicionaRobos(robo3);
-//        reservas.add(locacao2);
-//        Locacao locacao3 = new Locacao(12, Status.CADASTRADA, dataConvertida("17/04/2004"), 7, cliente3);
-//        locacao3.adicionaRobos(robo4);
-//        locacao3.adicionaRobos(robo1);
-//        reservas.add(locacao3);
-//        Locacao locacao4 = new Locacao(13, Status.CADASTRADA, dataConvertida("18/04/2004"), 7, cliente4);
-//        locacao4.adicionaRobos(robo5);
-//        reservas.add(locacao4);
-//        Locacao locacao5 = new Locacao(14, Status.CADASTRADA, dataConvertida("19/04/2004"), 7, cliente5);
-//        locacao5.adicionaRobos(robo6);
-//        reservas.add(locacao5);
-//        Locacao locacao6 = new Locacao(15, Status.CADASTRADA, dataConvertida("20/04/2004"), 7, cliente1);
-//        locacao6.adicionaRobos(robo4);
-//        reservas.add(locacao6);
-//        Locacao locacao7 = new Locacao(16, Status.CADASTRADA, dataConvertida("21/04/2004"), 7, cliente2);
-//        locacao7.adicionaRobos(robo2);
-//        reservas.add(locacao7);
-//        Locacao locacao8 = new Locacao(17, Status.CADASTRADA, dataConvertida("22/04/2004"), 7, cliente3);
-//        locacao8.adicionaRobos(robo3);
-//        reservas.add(locacao8);
-    }
-
 
     public boolean adicionarRobo(Robo novoRobo) {
         if (consultaIdRobo(novoRobo.getId()) != null) {
@@ -216,20 +163,6 @@ public class ACMERobots {
     }
 
 
-    /*
-       public Cliente consultaCodigo(int codigo) {
-        Cliente cliente = listaClientes.stream()
-                .filter(m -> m.getCodigo() == codigo)
-                .findFirst()
-                .orElse(null);
-        if (cliente != null) {
-            return cliente;
-        } else {
-            return null;
-        }
-    }
-     */
-
     public List<Robo> getListaRobos() {
         return listaRobos;
     }
@@ -246,21 +179,6 @@ public class ACMERobots {
         return reservas;
     }
 
-    /*
-
-    public consultaLocacao(){
-
-    }
-
-    */
-
-    /*
-
-    public void numeroRobosNaLocacao(int numero) {
-        listaLocacoes.get(numero).getListaRobos().size();
-    }
-
-    */
 
     public double calculoValorFinal(int numero) {
         double valorFinal = 0;
@@ -287,54 +205,28 @@ public class ACMERobots {
             }
         }
 
-        // Verifica se a locação foi encontrada
         if (locacao == null) {
-            // Caso não encontre a locação, você deve decidir o que fazer aqui.
-            // Por exemplo, lançar uma exceção, retornar 0 ou -1, etc.
             System.err.println("Locação não encontrada para o número: " + numero);
-            return 0; // Neste exemplo, retorna 0 se a locação não for encontrada
+            return 0;
         }
 
-        // Calcula o número de dias entre as datas de início e fim da locação
+
         dias =  locacao.getDiasEntreDatas();
 
-        // Calcula a porcentagem de desconto baseado no cliente da locação
+
         porcentagemDesconto = locacao.getCliente().calculaDesconto();
 
-        // Calcula o valor da locação dos robôs
+
         for (Robo robo : locacao.getListaRobos()) {
             valorLocacaoRobos += robo.calculaLocacao(Math.toIntExact(dias));
         }
 
-        // Calcula o desconto aplicado ao valor total da locação dos robôs
         desconto = valorLocacaoRobos * (porcentagemDesconto);
 
-        // Calcula o valor final da locação após aplicar o desconto
         valorFinal = valorLocacaoRobos - desconto;
 
         return valorFinal;
     }
-
-//    public void processarLocacoes() {
-//
-//        if(listaLocacoes.isEmpty()) {
-//            listaLocacoes.add(reservas.poll());
-//            listaLocacoes.get(0).setSituacao(Status.EXECUTANDO);
-//        }
-//
-//        for(Locacao locacao : reservas) {
-//            for(Locacao loc : listaLocacoes) {
-//                for(Robo robo : loc.getListaRobos())
-//                    for(Robo rob : locacao.getListaRobos()) {
-//                    if(robo != rob) {
-//                        listaLocacoes.add(reservas.poll());
-//                        locacao.setSituacao(Status.EXECUTANDO);
-//                    }
-//                }
-//            }
-//        }
-//
-//    }
 
 
     public void processarLocacoes() {
@@ -382,11 +274,9 @@ public class ACMERobots {
             if (!temRoboRepetido) {
                 listaLocacoes.add(reservaAtual);
                 reservaAtual.setSituacao(Status.EXECUTANDO);
-                //System.out.println("Locação adicionada: " + reservaAtual);
             } else {
                 reservaAtual.setSituacao(Status.CADASTRADA);
                 reservasPendentes.add(reservaAtual);
-                //System.out.println("Locação com robôs repetidos: " + reservaAtual);
             }
         }
 
@@ -400,7 +290,6 @@ public class ACMERobots {
         }
 
         if(locacao == null) {
-            //System.out.println("Locação não encontrada.");
             return false;
         }
 
@@ -426,8 +315,6 @@ public class ACMERobots {
                 return true;
             }
         }
-
-        //System.out.println("Operação não permitida para o estado atual da locação.");
         return false;
     }
 

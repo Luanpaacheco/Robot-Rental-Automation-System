@@ -21,9 +21,6 @@ public class TelaMenu {
     private JTextArea informacoesArea;
     private JButton limparButton;
     private JButton relatorioGeralButton;
-    private JButton salvarButton;
-    private JButton carregarDadosButton;
-    private JTextField textField1;
     private JButton processarLocacoes;
     private JButton consultarTodsLocacoes;
     private JButton mudarSituacaoLocacao;
@@ -50,14 +47,6 @@ public class TelaMenu {
             @Override
             public void actionPerformed(ActionEvent e) {
                 app.mudaPainel(5);
-            }
-        });
-        carregarDadosButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String dados = textField1.getText();
-                carregarDados.carregarRobosDados(dados);
-
             }
         });
 
@@ -109,6 +98,12 @@ public class TelaMenu {
                 acmeRobots.carregaDados("EXEMPLO-ROBOS", "EXEMPLO-CLIENTES","EXEMPLO-LOCACOES");
                 System.out.println(acmeRobots.getListaRobos().toString());
                 System.out.println(acmeRobots.getListaClientes().toString());
+            }
+        });
+        voltarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
             }
         });
     }

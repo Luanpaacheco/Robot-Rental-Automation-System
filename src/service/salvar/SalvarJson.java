@@ -6,11 +6,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class ConverteJson {
-    private ACMERobots acmeRobots;
+public class SalvarJson {
+    private ACMERobots acmeRobots = ACMERobots.getInstance();
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    public ConverteJson() {
+    public SalvarJson() {
 
         //this.acmeRobots = acmeRobots;
     }

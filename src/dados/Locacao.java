@@ -87,6 +87,11 @@ public class Locacao {
 		return (int) TimeUnit.DAYS.convert(diffInMillis, TimeUnit.MILLISECONDS);
 	}
 
+	public List<Robo> getListaDeRobos() {
+		return listaDeRobos;
+	}
 
-
+	public Date getDataInicio() {
+		return dataInicio;
+	}
 }
