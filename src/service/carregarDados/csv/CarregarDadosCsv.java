@@ -143,7 +143,7 @@ public class CarregarDadosCsv {
             System.err.println("Erro ao converter número no arquivo '" + nomeArquivo + "': " + e.getMessage());
             e.printStackTrace();
         }
-        return adicionarClientesUnicos(clientes);
+        return adicionarClientesUnicos(clientes,ACMERobots.getInstance());
     }
 
     public void carregarLocacoesDados(String nomeArquivo, ACMERobots acmeRobots) {
@@ -197,6 +197,8 @@ public class CarregarDadosCsv {
                                 acmeRobots.adicionarRoboNaReserva(robo);
                             }
                             locacoes.add(locacao);
+                            acmeRobots.adicionarReserva(locacao);
+
                         } else {
                             System.out.println("Locação com número " + numero + " já existe e não será adicionada novamente.");
                         }
@@ -217,10 +219,9 @@ public class CarregarDadosCsv {
             System.err.println("Erro ao ler o arquivo '" + nomeArquivo + ".csv': " + e.getMessage());
             e.printStackTrace();
         }
-        adicionarLocacoesUnicas(locacoes);
+
     }
-    private void adicionarLocacoesUnicas(Queue<Locacao> novasLocacoes) {
-        ACMERobots acmeRobots = ACMERobots.getInstance();
+    private void adicionarLocacoesUnicas(Queue<Locacao> novasLocacoes,ACMERobots acmeRobots) {
             Queue<Locacao> locacoesParaAdicionar = new LinkedList<>();
         Set<Integer> numerosExistentes = new HashSet<>();
         for (Locacao locacao : acmeRobots.getListaReserva()) {
@@ -239,8 +240,7 @@ public class CarregarDadosCsv {
             }
         }
     }
-    private List<Cliente> adicionarClientesUnicos(List<Cliente> novosClientes) {
-        ACMERobots acmeRobots = ACMERobots.getInstance();
+    private List<Cliente> adicionarClientesUnicos(List<Cliente> novosClientes,ACMERobots acmeRobots) {
         List<Cliente> clientesParaAdicionar = new ArrayList<>();
         Set<Integer> codigosExistentes = new HashSet<>();
         for (Cliente cliente : acmeRobots.getListaClientes()) {
