@@ -24,10 +24,10 @@ public class TelaConsultarLocacoes {
 
         for (Locacao l : acmeRobots.getListaLocacoes()) {
             double valor=acmeRobots.calculoValorFinal(l.getNumero());
-            textAreaLocacao.append(l.toString2()+"\n" + acmeRobots.calculoValorFinal(l.getNumero()) + "\n\n");
+            textAreaLocacao.append(l.toString2()+"\n" + "Valor: " + acmeRobots.calculoValorFinal(l.getNumero()) + "\n\n");
         }
         for (Locacao l : acmeRobots.getListaReserva()) {
-            textAreaLocacao.append(l.toString2()+"\n" + acmeRobots.calculoValorFinal(l.getNumero()) +  "\n\n");
+            textAreaLocacao.append(l.toString2()+"\n" + "Valor: " + acmeRobots.calculoValorFinal(l.getNumero()) +  "\n\n");
         }
 
         //textAreaLocacao.append(acmeRobots.getListaLocacoes().stream().map(a->a.toString2()).toString());

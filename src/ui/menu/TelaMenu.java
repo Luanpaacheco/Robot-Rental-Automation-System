@@ -115,7 +115,16 @@ public class TelaMenu {
         voltarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
 
+        limparButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                roboArquivoField1.setText("");
+                clienteArquivoField2.setText("");
+                locacaoArquiviField3.setText("");
             }
         });
     }
