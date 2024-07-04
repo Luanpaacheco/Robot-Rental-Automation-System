@@ -78,6 +78,11 @@ public class ACMERobots {
         }
 
         if (ultimaLocacao != null) {
+            for(Robo robo : ultimaLocacao.getListaDeRobos()) {
+                if(robo == novoRobo) {
+                    return false;
+               }
+            }
             ultimaLocacao.adicionaRobos(novoRobo);
             return true;
         }
