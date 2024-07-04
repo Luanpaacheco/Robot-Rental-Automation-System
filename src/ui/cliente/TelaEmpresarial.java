@@ -2,7 +2,6 @@ package ui.cliente;
 
 import aplicacao.ACMERobots;
 import dados.cliente.Empresarial;
-import dados.cliente.Individual;
 import ui.Aplicacao;
 
 import javax.swing.*;
@@ -20,6 +19,7 @@ public class TelaEmpresarial {
     private JButton cadastra;
     private JLabel ano;
     private JTextField labelNome;
+    private JButton fecharButton;
 
     public TelaEmpresarial(Aplicacao aplicacao){
         this.aplicacao=aplicacao;

@@ -5,68 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/service/carregarDados/json/carregarDadosJson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Empresarial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/cliente/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/cliente/Individual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Agricola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Agricola.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Domestico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Domestico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dados/robo/Industrial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/robo/Industrial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/CarregarDados.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/ConverteJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ConverteJson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaIndividual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaIndividual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientesClientes.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientesClientes.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/menu/TelaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/menu/TelaMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/robo/TelaR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/robo/TelaR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Agricola.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dados/robo/Agricola.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Domestico.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dados/robo/Domestico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dados/robo/Industrial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dados/robo/Industrial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/CarregarDados.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaEmpresarial$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaEmpresarial$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaEmpresarial$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaEmpresarial$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaIndividual$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaIndividual$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaIndividual$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaIndividual$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaMenuClientes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAddRobos$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAlteraSituacao$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaAlteraSituacao$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaConsultarLocacoes$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaConsultarLocacoes$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaResultados$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaResultados$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/menu/TelaRelatorioGeral$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/menu/TelaRelatorioGeral$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaA$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaA$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaD$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaD$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaI$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaConsultarLocacoes.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaConsultarLocacoes.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/carregarDados/json/carregarDadosJson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/carregarDados/json/carregarDadosJson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaEmpresarial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaEmpresarial.class" afterDir="false" />
     </list>
     <list id="a7dcceac-b8af-404a-8e12-2bb212f7b63f" name="Changes by arthu" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,8 +47,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "160",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "32",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Codigos/tf/ACMERobots",
