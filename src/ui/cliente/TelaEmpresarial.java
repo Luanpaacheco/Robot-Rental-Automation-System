@@ -57,6 +57,12 @@ public class TelaEmpresarial {
                 aplicacao.mudaPainel(0);
             }
         });
+        fecharButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
     }
 
     public JPanel getPainel(){
