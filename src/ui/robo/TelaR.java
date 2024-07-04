@@ -2,8 +2,8 @@ package ui.robo;
 
 import aplicacao.ACMERobots;
 import dados.robo.Robo;
-import service.ConverteJson;
-import service.carregarDados.json.carregarDadosJson;
+import service.salvar.ConverteJson;
+import service.carregarDados.json.CarregarDadosJson;
 import ui.Aplicacao;
 
 
@@ -16,7 +16,7 @@ import java.util.List;
 
 public class TelaR {
 
-    private carregarDadosJson carregarJson;
+    private CarregarDadosJson carregarJson;
     private ConverteJson conversor;
     private Aplicacao aplicacao;
     private ACMERobots acmeRobots = ACMERobots.getInstance();
@@ -34,12 +34,13 @@ public class TelaR {
     private JTextField arquivoNomeField;
     private JButton carregarDadosButton;
     private JTextField carregarField;
+    private JButton fecharButton1;
 
     public TelaR(Aplicacao app) {
         aplicacao = app;
         listaRobos = acmeRobots.getListaRobos();
         conversor =  new ConverteJson();//acmeRobots
-        carregarJson = new carregarDadosJson();
+        carregarJson = new CarregarDadosJson();
 
 
         limparButton.addActionListener(new ActionListener() {
@@ -108,6 +109,12 @@ public class TelaR {
                 String arquivo = carregarField.getText();
                 //Aqui colocamos uma collection genérica para receber a lista de robos que é retornada do metodo carregarDados
                 listaRobos.addAll((Collection<? extends Robo>) carregarJson.carregarDadosRobosJson(arquivo));
+            }
+        });
+        fecharButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
             }
         });
     }

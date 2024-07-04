@@ -1,13 +1,10 @@
-package service;
+package service.salvar;
 
 import aplicacao.ACMERobots;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
-import dados.robo.Robo;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.List;
 
 public class ConverteJson {
     private ACMERobots acmeRobots;

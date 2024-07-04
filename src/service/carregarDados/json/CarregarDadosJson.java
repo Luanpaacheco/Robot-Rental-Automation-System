@@ -18,7 +18,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class carregarDadosJson {
+public class CarregarDadosJson {
     ACMERobots acmeRobots = ACMERobots.getInstance();
 
     public List<Robo> carregarDadosRobosJson(String nomeArquivo) {
