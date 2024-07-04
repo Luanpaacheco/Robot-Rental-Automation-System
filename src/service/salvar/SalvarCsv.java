@@ -15,7 +15,7 @@ public class SalvarCsv {
     public void salvarLocacaoDados(String nomeArquivo, Queue<Locacao> locacoes) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(nomeArquivo + ".CSV"))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(nomeArquivo + ".csv"))) {
 
             bw.write("numero;situacao;datainicio;datafim;codigo;idsrobos");
             bw.newLine();

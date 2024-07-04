@@ -25,6 +25,9 @@ public class TelaMenu {
     private JButton consultarTodsLocacoes;
     private JButton mudarSituacaoLocacao;
     private JButton iniciarDadosButton;
+    private JTextField roboArquivoField1;
+    private JTextField clienteArquivoField2;
+    private JTextField locacaoArquiviField3;
 
 
     public TelaMenu(Aplicacao app){
@@ -95,9 +98,18 @@ public class TelaMenu {
         iniciarDadosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                acmeRobots.carregaDados("EXEMPLO-ROBOS", "EXEMPLO-CLIENTES","EXEMPLO-LOCACOES");
-                System.out.println(acmeRobots.getListaRobos().toString());
-                System.out.println(acmeRobots.getListaClientes().toString());
+                String arquivoRobo = roboArquivoField1.getText();
+                String arquivoCliente = clienteArquivoField2.getText();
+                String arquivoLocacao = locacaoArquiviField3.getText();
+                try{
+                    acmeRobots.carregaDados(arquivoRobo, arquivoCliente,arquivoLocacao);
+                    System.out.println(acmeRobots.getListaRobos().toString());
+                    System.out.println(acmeRobots.getListaClientes().toString());
+                }catch (Exception a){
+                    System.out.println(a.getMessage());
+                    informacoesArea.setText("Opa teve algum problema!");
+                }
+
             }
         });
         voltarButton.addActionListener(new ActionListener() {
