@@ -88,6 +88,12 @@ public class TelaMenuClientes {
                 System.exit(0);
             }
         });
+        carregarDadosButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField2.toString();
+            }
+        });
     }
     public JPanel getPainel() {
         return principal;

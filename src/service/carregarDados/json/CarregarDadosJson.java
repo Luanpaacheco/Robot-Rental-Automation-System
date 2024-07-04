@@ -65,7 +65,7 @@ public class CarregarDadosJson {
         }
         return verifica.adicionarClientesUnicos(clientes);
     }
-    public Queue<Locacao> carregarDadosLocacoesJson(String nomeArquivo) {
+    public void carregarDadosLocacoesJson(String nomeArquivo) {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 
@@ -86,7 +86,7 @@ public class CarregarDadosJson {
             e.printStackTrace();
         }
 
-        return verifica.adicionarLocacoesUnicas(locacoes);
+        //verifica.adicionarLocacoesUnicas(locacoes);
     }
     private List<Locacao> adicionarLocacoesUnicas(List<Locacao> novasLocacoes) {
         List<Locacao> locacoesParaAdicionar = new ArrayList<>();

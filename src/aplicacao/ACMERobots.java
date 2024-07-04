@@ -337,11 +337,11 @@ public class ACMERobots {
     public void carregaDados(String arquivoRobo, String arquivoCliente,String arquivoLocacao){
         clientes.addAll(carrega.carregarClientesDados(arquivoCliente));
         listaRobos.addAll(carrega.carregarRobosDados(arquivoRobo));
-        carrega.carregarLocacoesDados(arquivoLocacao,getInstance());
+        carrega.carregarLocacoesDados(arquivoLocacao);
         System.out.println(reservas);
     }
     public void carregarLocacoes(String arquivoLocacao){
-        carrega.carregarLocacoesDados(arquivoLocacao,getInstance());
+        carrega.carregarLocacoesDados(arquivoLocacao);
 
     }
 }

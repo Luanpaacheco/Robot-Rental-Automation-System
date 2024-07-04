@@ -28,8 +28,6 @@ public class CarregarDadosCsv {
     private VerificaDuplicacao verifica = new VerificaDuplicacao();
 
 
-
-
     public List<Robo> carregarRobosDados(String nomeArquivo) {
         List<Robo> robos = new ArrayList<>();
 
@@ -46,12 +44,10 @@ public class CarregarDadosCsv {
                 String[] dados = linha.split(";");
 
                 try {
-                    // Extrair os dados do CSV
                     int id = Integer.parseInt(dados[0].trim());
                     String modelo = dados[1].trim();
                     int tipo = Integer.parseInt(dados[2].trim());
 
-                    // Inicializar as variáveis opcionais
                     String nivelSetorArea = dados.length > 3 ? dados[3].trim() : "";
                     String uso = dados.length > 4 ? dados[4].trim() : "";
 
@@ -73,7 +69,7 @@ public class CarregarDadosCsv {
                             break;
                         default:
                             System.err.println("Erro: tipo de robô inválido na linha " + linha);
-                            continue; // Pular linhas com tipos de robô inválidos
+                            continue;
                     }
 
                     if (robo != null) {
@@ -97,6 +93,7 @@ public class CarregarDadosCsv {
 
         return verifica.adicionarRobosUnicos(robos);
     }
+
     public List<Cliente> carregarClientesDados(String nomeArquivo) {
         Cliente cliente = null;
 
@@ -145,12 +142,12 @@ public class CarregarDadosCsv {
             System.err.println("Erro ao converter número no arquivo '" + nomeArquivo + "': " + e.getMessage());
             e.printStackTrace();
         }
-        return  verifica.adicionarClientesUnicos(clientes);
+        return verifica.adicionarClientesUnicos(clientes);
     }
 
-    public void carregarLocacoesDados(String nomeArquivo, ACMERobots acmeRobots) {
+    public void carregarLocacoesDados(String nomeArquivo) {
+        ACMERobots acmeRobots = ACMERobots.getInstance();
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        Queue<Locacao> locacoes = new LinkedList<>();
 
         try (BufferedReader br = new BufferedReader(new FileReader(nomeArquivo + ".csv"))) {
             String linha;
@@ -165,48 +162,47 @@ public class CarregarDadosCsv {
                 String[] dados = linha.split(";");
                 try {
                     int numero = Integer.parseInt(dados[0].trim());
-                    Status situacao = Status.valueOf(dados[1].trim());
-                    Date dataInicio = dateFormat.parse(dados[2].trim());
-                    Date dataFim = dateFormat.parse(dados[3].trim());
-                    int codigoCliente = Integer.parseInt(dados[4].trim());
 
-                    List<Robo> robos = new ArrayList<>();
-                    for (int i = 5; i < dados.length; i++) {
-                        int codigoRobo = Integer.parseInt(dados[i].trim());
-                        Robo robo = acmeRobots.consultaIdRobo(codigoRobo);
-                        if (robo != null) {
-                            robos.add(robo);
-                        } else {
-                            System.err.println("Robô com código " + codigoRobo + " não encontrado.");
+                    // Verificar se a locação já existe
+                    boolean locacaoExiste = false;
+                    for (Locacao locacaoExistente : acmeRobots.getListaLocacoes()) {
+                        if (locacaoExistente.getNumero() != numero) {
+                            locacaoExiste = true;
+                            break;
                         }
                     }
 
-                    Cliente cliente = acmeRobots.consultaCodigoCliente(codigoCliente);
-                    if (cliente != null) {
-                        // Verificar se a locação já existe na memória
-                        boolean locacaoExiste = false;
-                        for (Locacao locacaoExistente : acmeRobots.getListaLocacoes()) {
-                            if (locacaoExistente.getNumero() == numero) {
-                                locacaoExiste = true;
-                                break;
+                    if (!locacaoExiste) {
+                        Status situacao = Status.valueOf(dados[1].trim());
+                        Date dataInicio = dateFormat.parse(dados[2].trim());
+                        Date dataFim = dateFormat.parse(dados[3].trim());
+                        int codigoCliente = Integer.parseInt(dados[4].trim());
+
+                        // Inicializar lista de robôs para esta locação
+                        List<Robo> robos = new ArrayList<>();
+                        for (int i = 5; i < dados.length; i++) {
+                            int codigoRobo = Integer.parseInt(dados[i].trim());
+                            Robo robo = acmeRobots.consultaIdRobo(codigoRobo);
+                            if (robo != null) {
+                                robos.add(robo);
+                            } else {
+                                System.err.println("Robô com código " + codigoRobo + " não encontrado.");
                             }
                         }
 
-                        if (!locacaoExiste) {
+                        Cliente cliente = acmeRobots.consultaCodigoCliente(codigoCliente);
+                        if (cliente != null) {
+                            // Criar a locação e adicionar os robôs encontrados
                             Locacao locacao = new Locacao(numero, situacao, dataInicio, dataFim, cliente);
-                            //acmeRobots.adicionarReserva(locacao);
-                            for (Robo robo : robos) {
-                                acmeRobots.adicionarRoboNaReserva(robo);
-                            }
-                            locacoes.add(locacao);
-                            verifica.adicionarLocacoesUnicas(locacoes);
-
+                            locacao.getListaDeRobos().addAll(robos);
+                            acmeRobots.adicionarReserva(locacao);
                         } else {
-                            System.out.println("Locação com número " + numero + " já existe e não será adicionada novamente.");
+                            System.err.println("Cliente com código " + codigoCliente + " não encontrado.");
                         }
                     } else {
-                        System.err.println("Cliente com código " + codigoCliente + " não encontrado.");
+                        System.out.println("Locação com número " + numero + " já existe e não será adicionada novamente.");
                     }
+
                 } catch (NumberFormatException e) {
                     System.err.println("Erro ao converter número na linha " + linha + ": " + e.getMessage());
                 } catch (ParseException e) {
@@ -221,8 +217,6 @@ public class CarregarDadosCsv {
             System.err.println("Erro ao ler o arquivo '" + nomeArquivo + ".csv': " + e.getMessage());
             e.printStackTrace();
         }
-
     }
-
-
 }
+
