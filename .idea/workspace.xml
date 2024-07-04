@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaEmpresarial.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaConsultarLocacoes.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaConsultarLocacoes.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/carregarDados/json/carregarDadosJson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/carregarDados/json/carregarDadosJson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaAlteraSituacao.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaAlteraSituacao.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ui/cliente/TelaEmpresarial.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/cliente/TelaEmpresarial.class" afterDir="false" />
     </list>
     <list id="a7dcceac-b8af-404a-8e12-2bb212f7b63f" name="Changes by arthu" comment="" />
@@ -49,7 +47,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "32",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "235",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Codigos/tf/ACMERobots",
