@@ -17,6 +17,7 @@ public class TelaAlteraSituacao {
     private JTextArea textArea1;
     private JPanel painel1;
     private JButton Voltar;
+    private JButton fecharButton;
 
     public TelaAlteraSituacao(Aplicacao aplicacao) {
         app = aplicacao;
@@ -69,6 +70,12 @@ public class TelaAlteraSituacao {
         });
 
 
+        fecharButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
     }
     public JPanel getPainel() {
         return painel1;
