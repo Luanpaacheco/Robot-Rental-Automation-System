@@ -8,9 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/carregarDados/csv/CarregarDadosCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/carregarDados/csv/CarregarDadosCsv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/duplicacao/VerificaDuplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/duplicacao/VerificaDuplicacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/service/carregarDados/csv/CarregarDadosCsv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/carregarDados/csv/CarregarDadosCsv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/duplicacao/VerificaDuplicacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/duplicacao/VerificaDuplicacao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaConsultarLocacoes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaConsultarLocacoes.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +148,7 @@
       <workItem from="1719995586353" duration="17408000" />
       <workItem from="1720083417859" duration="3262000" />
       <workItem from="1720116262779" duration="698000" />
-      <workItem from="1720130642627" duration="1089000" />
+      <workItem from="1720130642627" duration="2822000" />
     </task>
     <servers />
   </component>

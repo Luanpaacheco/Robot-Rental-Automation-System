@@ -22,7 +22,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 public class ACMERobots {
-    private static ACMERobots instance; // Instância única da classe ACMERobots
+    private static ACMERobots instance = ACMERobots.getInstance(); // Instância única da classe ACMERobots
 
     private List<Robo> listaRobos = new ArrayList<>();
     private List<Cliente> clientes;
@@ -341,7 +341,7 @@ public class ACMERobots {
     public void carregaDados(String arquivoRobo, String arquivoCliente,String arquivoLocacao){
         clientes.addAll(carrega.carregarClientesDados(arquivoCliente));
         listaRobos.addAll(carrega.carregarRobosDados(arquivoRobo));
-        carrega.carregarLocacoesDados(arquivoLocacao);
+        instance.reservas.addAll(carrega.carregarLocacoesDados(arquivoLocacao));
         System.out.println(reservas);
     }
     public void carregarLocacoes(String arquivoLocacao){

@@ -145,10 +145,11 @@ public class CarregarDadosCsv {
         return verifica.adicionarClientesUnicos(clientes);
     }
 
-    public void carregarLocacoesDados(String nomeArquivo) {
+    public Queue<Locacao> carregarLocacoesDados(String nomeArquivo) {
         ACMERobots acmeRobots = ACMERobots.getInstance();
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
+        Queue<Locacao> locacoes = new LinkedList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(nomeArquivo + ".csv"))) {
             String linha;
             boolean primeiraLinha = true;
@@ -192,10 +193,10 @@ public class CarregarDadosCsv {
 
                         Cliente cliente = acmeRobots.consultaCodigoCliente(codigoCliente);
                         if (cliente != null) {
-                            // Criar a locação e adicionar os robôs encontrados
                             Locacao locacao = new Locacao(numero, situacao, dataInicio, dataFim, cliente);
                             locacao.getListaDeRobos().addAll(robos);
-                            acmeRobots.adicionarReserva(locacao);
+                            locacoes.add(locacao);
+
                         } else {
                             System.err.println("Cliente com código " + codigoCliente + " não encontrado.");
                         }
@@ -217,8 +218,7 @@ public class CarregarDadosCsv {
             System.err.println("Erro ao ler o arquivo '" + nomeArquivo + ".csv': " + e.getMessage());
             e.printStackTrace();
         }
+        return locacoes;
     }
-
-
 }
 
