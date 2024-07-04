@@ -15,9 +15,9 @@ public class SalvarCsv {
     public void salvarLocacaoDados(String nomeArquivo, Queue<Locacao> locacoes) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(nomeArquivo + ".csv"))) {
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(nomeArquivo + ".CSV"))) {
 
-            bw.write("Numero;Situacao;DataInicio;DataFim;CodigoCliente;CodigosRobos");
+            bw.write("numero;situacao;datainicio;datafim;codigo;idsrobos");
             bw.newLine();
 
             for (Locacao locacao : locacoes) {
@@ -26,14 +26,14 @@ public class SalvarCsv {
                 linha.append(locacao.getNumero()).append(";");
                 linha.append(locacao.getSituacao()).append(";");
                 linha.append(dateFormat.format(locacao.getDataInicio())).append(";");
-                linha.append(locacao.getDataFim()).append(";");
+                linha.append(dateFormat.format(locacao.getDataFim())).append(";");
                 linha.append(locacao.getCliente().getCodigo()).append(";");
 
                 List<Robo> robos = locacao.getListaDeRobos();
                 for (int i = 0; i < robos.size(); i++) {
                     linha.append(robos.get(i).getId());
                     if (i < robos.size() - 1) {
-                        linha.append(",");
+                        linha.append(";");
                     }
                 }
 

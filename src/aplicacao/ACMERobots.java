@@ -178,6 +178,9 @@ public class ACMERobots {
     public Queue<Locacao> getListaReserva() {
         return reservas;
     }
+    public void setListaReserva(Queue<Locacao> a ) {
+        reservas.addAll(a);
+    }
 
 
     public double calculoValorFinal(int numero) {
@@ -331,6 +334,10 @@ public class ACMERobots {
         listaRobos.addAll(carrega.carregarRobosDados(arquivoRobo));
         carrega.carregarLocacoesDados(arquivoLocacao,getInstance());
         System.out.println(reservas);
+    }
+    public void carregarLocacoes(String arquivoLocacao){
+        carrega.carregarLocacoesDados(arquivoLocacao,getInstance());
+
     }
 }
 
