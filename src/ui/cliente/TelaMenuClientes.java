@@ -26,6 +26,7 @@ public class TelaMenuClientes {
     private JButton salvarDadosButton;
     private JTextField salvarClientes;
     private JTextField textField2;
+    private JButton fecharButton;
 
     public TelaMenuClientes(Aplicacao aplicacao) {
         this.aplicacao=aplicacao;
@@ -79,6 +80,12 @@ public class TelaMenuClientes {
                 }else{
                     conversor.salvarDados(acmeRobots.getListaClientes(), nomeArquivo);
                 }
+            }
+        });
+        fecharButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
             }
         });
     }
