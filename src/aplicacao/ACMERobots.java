@@ -24,7 +24,7 @@ public class ACMERobots {
     private static ACMERobots instance; // Instância única da classe ACMERobots
 
     private List<Robo> listaRobos = new ArrayList<>();
-    private List<Cliente>clientes;
+    private List<Cliente> clientes;
     private ArrayList<Locacao> listaLocacoes;
     private Queue<Locacao> reservas;
     private Status status;
@@ -262,35 +262,56 @@ public class ACMERobots {
 
     */
 
-    public double calculoValorFinal(int numero){
-        double valorFinal;
-        double porcentagemDesconto;
+    public double calculoValorFinal(int numero) {
+        double valorFinal = 0;
+        double porcentagemDesconto = 0;
         double valorLocacaoRobos = 0;
-        double desconto;
-        int dias;
+        double desconto = 0;
+        long dias = 0;
+
+        // Busca pela locação com o número especificado
         Locacao locacao = null;
-        for(Locacao loc : getListaLocacoes()) {
-            if(loc.getNumero() == numero) {
+        for (Locacao loc : getListaLocacoes()) {
+            if (loc.getNumero() == numero) {
                 locacao = loc;
+                break; // Encontrou a locação, sai do loop
             }
         }
+
         if(locacao==null){
-            for(Locacao loc : getListaLocacoes()) {
-                if(loc.getNumero() == numero) {
+            for (Locacao loc : getListaReserva()) {
+                if (loc.getNumero() == numero) {
                     locacao = loc;
+                    break; // Encontrou a locação, sai do loop
                 }
             }
         }
-        if (locacao==null){
-            return 0.09080800;
+
+        // Verifica se a locação foi encontrada
+        if (locacao == null) {
+            // Caso não encontre a locação, você deve decidir o que fazer aqui.
+            // Por exemplo, lançar uma exceção, retornar 0 ou -1, etc.
+            System.err.println("Locação não encontrada para o número: " + numero);
+            return 0; // Neste exemplo, retorna 0 se a locação não for encontrada
         }
-        dias = locacao.getDataFim();
+
+        // Calcula o número de dias entre as datas de início e fim da locação
+        dias =  locacao.getDiasEntreDatas();
+
+        // Calcula a porcentagem de desconto baseado no cliente da locação
         porcentagemDesconto = locacao.getCliente().calculaDesconto();
-        for(Robo robo : locacao.getListaRobos()) {
-            valorLocacaoRobos += robo.calculaLocacao(dias);
+
+        // Calcula o valor da locação dos robôs
+        for (Robo robo : locacao.getListaRobos()) {
+            valorLocacaoRobos += robo.calculaLocacao(Math.toIntExact(dias));
         }
-        desconto = valorLocacaoRobos * porcentagemDesconto;
+
+        // Calcula o desconto aplicado ao valor total da locação dos robôs
+        desconto = valorLocacaoRobos * (porcentagemDesconto);
+
+        // Calcula o valor final da locação após aplicar o desconto
         valorFinal = valorLocacaoRobos - desconto;
+
         return valorFinal;
     }
 

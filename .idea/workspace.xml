@@ -5,17 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientesClientes.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/cliente/TelaMenuClientesClientes.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/robo/TelaR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/robo/TelaR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXEMPLO-LOCACOES.CSV" beforeDir="false" afterPath="$PROJECT_DIR$/EXEMPLO-LOCACOES.CSV" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dados/Locacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dados/Locacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/carregarDados/csv/CarregarDadosCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/carregarDados/csv/CarregarDadosCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/salvar/SalvarCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/salvar/SalvarCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/locacao/TelaCriarLocacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/ACMERobots.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/service/carregarDados/csv/CarregarDadosCsv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/service/carregarDados/csv/CarregarDadosCsv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/locacao/TelaCriarLocacao.class" afterDir="false" />
     </list>
-    <list id="a7dcceac-b8af-404a-8e12-2bb212f7b63f" name="Changes by arthu" comment="" />
+    <list id="a7dcceac-b8af-404a-8e12-2bb212f7b63f" name="Changes by arthu" comment="">
+      <change beforePath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aplicacao/ACMERobots.java" afterDir="false" />
+    </list>
+    <list id="92361cca-86db-4815-b615-feb85a2009eb" name="Changes by luanp" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +38,25 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/aplicacao/ACMERobots.java">
+      <ranges>
+        <range start1="26" end1="27" start2="26" end2="27" changelist="a7dcceac-b8af-404a-8e12-2bb212f7b63f" />
+        <range start1="264" end1="267" start2="264" end2="267" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="268" end1="270" start2="268" end2="272" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="271" end1="273" start2="273" end2="275" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="274" end1="274" start2="276" end2="277" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="276" end1="276" start2="279" end2="280" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="277" end1="279" start2="281" end2="283" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="280" end1="280" start2="284" end2="285" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="283" end1="285" start2="288" end2="295" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="286" end1="287" start2="296" end2="301" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="288" end1="290" start2="302" end2="306" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="291" end1="292" start2="307" end2="312" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+        <range start1="293" end1="293" start2="313" end2="314" changelist="a3bb0fc4-da67-41c6-bbf0-934015dab2d1" />
+      </ranges>
+    </file>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -150,7 +175,7 @@
       <workItem from="1719797138411" duration="7330000" />
       <workItem from="1719947412122" duration="1539000" />
       <workItem from="1719961626921" duration="3576000" />
-      <workItem from="1719995586353" duration="12547000" />
+      <workItem from="1719995586353" duration="14947000" />
     </task>
     <servers />
   </component>

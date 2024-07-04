@@ -168,7 +168,7 @@ public class CarregarDadosCsv {
                     int numero = Integer.parseInt(dados[0].trim());
                     Status situacao = Status.valueOf(dados[1].trim()); // Converte a string para enum Status
                     Date dataInicio = dateFormat.parse(dados[2].trim());
-                    int dataFim = Integer.parseInt(dados[3].trim());
+                    Date dataFim = dateFormat.parse(dados[3].trim());
                     int codigoCliente = Integer.parseInt(dados[4].trim());
 
                     // Lista para armazenar os robôs associados à locação

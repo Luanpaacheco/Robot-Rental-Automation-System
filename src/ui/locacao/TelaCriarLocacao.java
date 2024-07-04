@@ -59,10 +59,11 @@ public class TelaCriarLocacao extends JDialog {
                     int numero = Integer.valueOf(numeroField.getText());
                     //String situacaoString = situacaoField.getText();
                     String dataInicioString = dataInicioField.getText();
-                    int dataFim = Integer.valueOf(dataFimField.getText());
+                    String dataFimString = dataFimField.getText();
                     int codigoCliente = Integer.valueOf(clienteField.getText());
 
                     Date dataInicio = acmeRobots.dataConvertida(dataInicioString);
+                    Date dataFim = acmeRobots.dataConvertida(dataFimString);
                    // Status situacao = Status.valueOf(situacaoString);
                     Cliente cliente = acmeRobots.consultaCodigoCliente(codigoCliente);
 

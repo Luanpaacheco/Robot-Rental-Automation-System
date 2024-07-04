@@ -1,23 +1,25 @@
 package dados;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.Temporal;
 import java.util.ArrayList;
 import java.util.Date;
 import dados.cliente.*;
 import dados.robo.*;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Locacao {
 
 	private int numero;
 	private Status situacao;
 	private Date dataInicio;
-	private int dataFim;
+	private Date dataFim;
 	private Cliente cliente;
 	private List<Robo> listaDeRobos = new ArrayList<>();
 
-	public Locacao(int numero, Status situacao, Date dataInicio, int dataFim, Cliente cliente) {
+	public Locacao(int numero, Status situacao, Date dataInicio, Date dataFim, Cliente cliente) {
 		this.numero = numero;
 		this.situacao = situacao;
 		this.dataInicio = dataInicio;
@@ -45,7 +47,7 @@ public class Locacao {
 		return situacao;
 	}
 
-	public int getDataFim() {
+	public Date getDataFim() {
 		return dataFim;
 	}
 
@@ -80,6 +82,11 @@ public class Locacao {
 				"\n" + "Data Fim: " + dataFim + " dias;" +
 				"\n" + "Robos selecionados: " + listaDeRobos + ";";
 	}
+	public int getDiasEntreDatas() {
+		long diffInMillis = Math.abs(dataFim.getTime() - dataInicio.getTime());
+		return (int) TimeUnit.DAYS.convert(diffInMillis, TimeUnit.MILLISECONDS);
+	}
+
 
 
 }

@@ -16,30 +16,18 @@ public class SalvarCsv {
 //
 //        try (BufferedWriter bw = new BufferedWriter(new FileWriter(nomeArquivo + ".csv"))) {
 //
-//            // Escreve o cabeçalho
 //            bw.write("Numero;Situacao;DataInicio;DataFim;CodigoCliente;CodigosRobos");
 //            bw.newLine();
 //
-//            // Escreve cada locação na lista
 //            for (Locacao locacao : locacoes) {
 //                StringBuilder linha = new StringBuilder();
 //
-//                // Número da locação
 //                linha.append(locacao.getNumero()).append(";");
-//
-//                // Situação da locação
 //                linha.append(locacao.getSituacao()).append(";");
-//
-//                // Data de início
 //                linha.append(dateFormat.format(locacao.getDataInicio())).append(";");
-//
-//                // Data de fim
 //                linha.append(locacao.getDataFim()).append(";");
-//
-//                // Código do cliente
 //                linha.append(locacao.getCliente().getCodigo()).append(";");
 //
-//                // Códigos dos robôs
 //                List<Robo> robos = locacao.getRobos();
 //                for (int i = 0; i < robos.size(); i++) {
 //                    linha.append(robos.get(i).getId());
@@ -48,7 +36,7 @@ public class SalvarCsv {
 //                    }
 //                }
 //
-//                // Escreve a linha no arquivo
+//
 //                bw.write(linha.toString());
 //                bw.newLine();
 //            }
