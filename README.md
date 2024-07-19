@@ -1,7 +1,10 @@
-ACMERobots - Sistema de Automação para Locação de Robôs
+ACMERobots - Sistema de Automação para Locação de Robôs 
+
+
 Este projeto implementa uma aplicação com interface gráfica de usuário (GUI) para automatizar o negócio da ACMERobots. O sistema possui uma tela cíclica que permite ao usuário realizar diversas operações relacionadas ao cadastro de robôs, clientes, locações e gerenciamento dessas informações.
 
 Funcionalidades do Sistema
+
 Cadastrar Novo Robô: Permite cadastrar os dados de um novo robô. O sistema verifica se já existe um robô com o mesmo id e mantém os robôs em ordem crescente de id. Em caso de duplicidade, exibe uma mensagem de erro.
 
 Cadastrar Novo Cliente: Solicita e cadastra os dados de um novo cliente. Verifica se o código do cliente já existe e mantém os clientes em ordem crescente de código. Em caso de código duplicado, mostra uma mensagem de erro.
@@ -30,8 +33,10 @@ Interface Gráfica de Usuário (GUI): Implementada para facilitar a interação 
 Armazenamento de Dados: Utiliza arquivos CSV e JSON para armazenar os dados de robôs, clientes e locações.
 Metodologia de Desenvolvimento: Utilização de técnicas como pair programming para colaboração entre os desenvolvedores.
 Desenvolvedores
+
+
 Este projeto foi desenvolvido por:
 
 Arthur Blasi
-Luan Pacheco (você)
+Luan Pacheco Lima
 Luis Trein
